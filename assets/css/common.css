@@ -3,11 +3,22 @@
   position: relative;
   padding: 10px 20px;
 }
+@media (max-width: 767px) {
+  .inner-banner {
+    height: 250px;
+    padding: 0 10px;
+  }
+}
 .inner-banner figure {
   border-radius: 40px;
   overflow: hidden;
   width: 100%;
   height: 100%;
+}
+@media (max-width: 767px) {
+  .inner-banner figure {
+    border-radius: 20px;
+  }
 }
 .inner-banner figure img {
   width: 100%;

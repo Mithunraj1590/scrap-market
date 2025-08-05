@@ -20,14 +20,14 @@
         padding: 50px 0;
     }
 
-    @include max(480) {
-        padding: 40px 0;
-    }
-
+  
     .about-content-wrapper {
         .title {
             text-align: center;
             margin-bottom: 30px;
+            @include max(767) {
+              margin-bottom: 20px;
+            }
         }
 
         p {
@@ -176,15 +176,14 @@
 
     @include max(991) {
         padding: 60px 0;
+        border-radius: 0;
     }
 
     @include max(767) {
         padding: 50px 0;
     }
 
-    @include max(480) {
-        padding: 40px 0;
-    }
+  
 
     .why-choose-wrapper {
         display: flex;
@@ -204,22 +203,22 @@
         line-height: 1.2;
 
         @include max(1200) {
-            font-size: size(30);
+          
             margin-bottom: 35px;
         }
 
         @include max(991) {
-            font-size: size(28);
+           
             margin-bottom: 30px;
         }
 
         @include max(767) {
-            font-size: size(26);
+           
             margin-bottom: 25px;
         }
 
         @include max(480) {
-            font-size: size(24);
+          
             margin-bottom: 20px;
         }
     }
