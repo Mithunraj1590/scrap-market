@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrap Market</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Project CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/buypage.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container h-100 d-flex align-items-center w-100">
+            <div class="logo">
+                <a href="./">
+                    <figure>
+                        <img src="./assets/images/logo.png" alt="">
+                    </figure>
+                </a>
+            </div>
+            <div class="header-right ml-auto d-flx flx-vcenter">
+                <nav class="main-nav">
+                    <ul class="mx-lg-auto">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="">categories</a></li>
+                        <li><a class="active" href="/buy.html">buy</a></li>
+                        <li><a href="">sell</a></li>
+                        <li><a href="">contact</a></li>
+                    </ul>
+                    <ul class="btn-group">
+                        <li><button class="btn btn-secondary-lite"><svg width="30" height="30" viewBox="0 0 30 30"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1_1207)">
+                                        <path
+                                            d="M22.5 20C25.2614 20 27.5 17.7614 27.5 15C27.5 12.2386 25.2614 10 22.5 10"
+                                            stroke="#212121" stroke-width="1.875" stroke-linejoin="round" />
+                                        <path d="M7.5 10C4.73857 10 2.5 12.2386 2.5 15C2.5 17.7614 4.73857 20 7.5 20"
+                                            stroke="#212121" stroke-width="1.875" stroke-linejoin="round" />
+                                        <path
+                                            d="M7.5 20V19.6875V18.125V15V10C7.5 5.85786 10.8579 2.5 15 2.5C19.1421 2.5 22.5 5.85786 22.5 10V20C22.5 24.1421 19.1421 27.5 15 27.5"
+                                            stroke="#212121" stroke-width="1.875" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1_1207">
+                                            <rect width="30" height="30" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                connect us</button></li>
+                        <li><button class="btn btn-primary">pickup request</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="mob-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="overlay"></div>
+    </header>
+
+
+    <main class="main">
+        <section class="inner-banner">
+            <figure>
+                <img src="assets/images/inner-banner.png" alt="innerbanner">
+            </figure>
+            <div class="content">
+                <h1 class="h1 title">Buy</h1>
+            </div>
+        </section>
+
+        <section class="buy-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="filter-section">
+                            <!-- All Categories Section -->
+                            <div class="filter-group">
+
+                                <h4 class="filter-group-title">All Categories</h4>
+                                <div class="filter-options">
+                                    <label class="filter-option">
+                                        <input type="radio" name="category" value="building-materials">
+                                        <span class="radio-mark"></span>
+                                        <p class="option-text">Building Materials <span>(20)</span></p>
+                                    </label>
+                                    <label class="filter-option">
+                                        <input type="radio" name="category" value="hand-tools">
+                                        <span class="radio-mark"></span>
+                                        <p class="option-text">Hand Tools <span>(20)</span></p>
+                                    </label>
+                                    <label class="filter-option">
+                                        <input type="radio" name="category" value="power-tools">
+                                        <span class="radio-mark"></span>
+                                        <p class="option-text">Power Tools <span>(20)</span></p>
+                                    </label>
+                                    <label class="filter-option">
+                                        <input type="radio" name="category" value="electrical">
+                                        <span class="radio-mark"></span>
+                                        <p class="option-text">Electrical <span>(20)</span></p>
+                                    </label>
+                                    <label class="filter-option">
+                                        <input type="radio" name="category" value="ppe">
+                                        <span class="radio-mark"></span>
+                                        <p class="option-text">PPE <span>(20)</span></p>
+                                    </label>
+                                    <label class="filter-option">
+                                        <input type="radio" name="category" value="carpet">
+                                        <span class="radio-mark"></span>
+                                        <p class="option-text">Carpet <span>(20)</span></p>
+                                    </label>
+                                    <label class="filter-option">
+                                        <input type="radio" name="category" value="decor">
+                                        <span class="radio-mark"></span>
+                                        <p class="option-text">Decor <span>(20)</span></p>
+                                    </label>
+                                    <label class="filter-option">
+                                        <input type="radio" name="category" value="cleaning-items">
+                                        <span class="radio-mark"></span>
+                                        <p class="option-text">Cleaning Items <span>(20)</span></p>
+                                    </label>
+                                    <label class="filter-option">
+                                        <input type="radio" name="category" value="others">
+                                        <span class="radio-mark"></span>
+                                        <p class="option-text">Others <span>(20)</span></p>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Brands Section -->
+                            <div class="filter-group">
+                                <h4 class="filter-group-title">Brands</h4>
+                                <div class="filter-options">
+                                    <label class="filter-option">
+                                        <input type="radio" name="brand" value="jcb">
+                                        <span class="radio-mark"></span>
+                                        <p class="option-text">JCB <span>(20)</span></p>
+                                    </label>
+                                    <label class="filter-option">
+                                        <input type="radio" name="brand" value="powermake">
+                                        <span class="radio-mark"></span>
+                                        <p class="option-text">POWERMAKE <span>(20)</span></p>
+                                    </label>
+                                    <label class="filter-option">
+                                        <input type="radio" name="brand" value="ingco">
+                                        <span class="radio-mark"></span>
+                                        <p class="option-text">INGCO <span>(20)</span></p>
+                                    </label>
+                                    <label class="filter-option">
+                                        <input type="radio" name="brand" value="pigeon">
+                                        <span class="radio-mark"></span>
+                                        <p class="option-text">PIGEON <span>(20)</span></p>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Product Tags Section -->
+                            <div class="filter-group">
+                                <h4 class="filter-group-title">Product Tags</h4>
+                                <div class="product-tags">
+                                    <button class="tag-btn" data-tag="decor">Decor</button>
+                                    <button class="tag-btn" data-tag="power-tools">Power Tools</button>
+                                    <button class="tag-btn" data-tag="electrical">Electrical</button>
+                                    <button class="tag-btn" data-tag="carpet">Carpet</button>
+                                    <button class="tag-btn" data-tag="ppe">PPE</button>
+                                    <button class="tag-btn" data-tag="cleaning-items">Cleaning Items</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="listing-section">
+                             <!-- Listing Header -->
+                             <div class="listing-header">
+                                <div class="results-info">
+                                    <span>Showing 1 of 10 Results</span>
+                                </div>
+                                <div class="sorting-section">
+                                    Sorting:
+                                    <select class="sorting-select">
+                                        <option value="default"> Default Sorting</option>
+                                        <option value="price-low">Price: Low to High</option>
+                                        <option value="price-high">Price: High to Low</option>
+                                        <option value="name-asc">Name: A to Z</option>
+                                        <option value="name-desc">Name: Z to A</option>
+                                        <option value="newest">Newest First</option>
+                                        <option value="oldest">Oldest First</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Product Grid -->
+                            <div class="product-grid">
+                                <!-- Product 1 -->
+                                <a href="/" class="product-card">
+                                    <div class="product-image">
+                                        <img src="assets/images/product.png" alt="Ingco 1500W Demolition Hammer">
+                                        <button class="wishlist-btn">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <button class="btn btn-secondary">ADD TO CART</button>
+                                        <h3 class="product-title">Ingco 1500W Demolition...</h3>
+                                        <div class="product-price">
+                                            <span class="current-price">QAR 525.00</span>
+                                            <span class="original-price">QAR 800</span>
+                                        </div>
+                                        <div class="product-rating">
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- Product 2 -->
+                                <a href="/" class="product-card">
+                                    <div class="product-image">
+                                        <img src="assets/images/product.png" alt="Ingco 1500W Demolition Hammer">
+                                        <button class="wishlist-btn">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <button class="btn btn-secondary">ADD TO CART</button>
+                                        <h3 class="product-title">Ingco 1500W Demolition...</h3>
+                                        <div class="product-price">
+                                            <span class="current-price">QAR 525.00</span>
+                                            <span class="original-price">QAR 800</span>
+                                        </div>
+                                        <div class="product-rating">
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- Product 3 -->
+                                <a href="/" class="product-card">
+                                    <div class="product-image">
+                                        <img src="assets/images/product.png" alt="Ingco 1500W Demolition Hammer">
+                                        <button class="wishlist-btn">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <button class="btn btn-secondary">ADD TO CART</button>
+                                        <h3 class="product-title">Ingco 1500W Demolition...</h3>
+                                        <div class="product-price">
+                                            <span class="current-price">QAR 525.00</span>
+                                            <span class="original-price">QAR 800</span>
+                                        </div>
+                                        <div class="product-rating">
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- Product 4 -->
+                                <a href="/" class="product-card">
+                                    <div class="product-image">
+                                        <img src="assets/images/product.png" alt="Ingco 1500W Demolition Hammer">
+                                        <button class="wishlist-btn">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <button class="btn btn-secondary">ADD TO CART</button>
+                                        <h3 class="product-title">Ingco 1500W Demolition...</h3>
+                                        <div class="product-price">
+                                            <span class="current-price">QAR 525.00</span>
+                                            <span class="original-price">QAR 800</span>
+                                        </div>
+                                        <div class="product-rating">
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- Product 5 -->
+                                <a href="/" class="product-card">
+                                    <div class="product-image">
+                                        <img src="assets/images/product.png" alt="Ingco 1500W Demolition Hammer">
+                                        <button class="wishlist-btn">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <button class="btn btn-secondary">ADD TO CART</button>
+                                        <h3 class="product-title">Ingco 1500W Demolition...</h3>
+                                        <div class="product-price">
+                                            <span class="current-price">QAR 525.00</span>
+                                            <span class="original-price">QAR 800</span>
+                                        </div>
+                                        <div class="product-rating">
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- Product 6 -->
+                                <a href="/" class="product-card">
+                                    <div class="product-image">
+                                        <img src="assets/images/product.png" alt="Ingco 1500W Demolition Hammer">
+                                        <button class="wishlist-btn">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <button class="btn btn-secondary">ADD TO CART</button>
+                                        <h3 class="product-title">Ingco 1500W Demolition...</h3>
+                                        <div class="product-price">
+                                            <span class="current-price">QAR 525.00</span>
+                                            <span class="original-price">QAR 800</span>
+                                        </div>
+                                        <div class="product-rating">
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- Product 7 -->
+                                <a href="/" class="product-card">
+                                    <div class="product-image">
+                                        <img src="assets/images/product.png" alt="Ingco 1500W Demolition Hammer">
+                                        <button class="wishlist-btn">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <button class="btn btn-secondary">ADD TO CART</button>
+                                        <h3 class="product-title">Ingco 1500W Demolition...</h3>
+                                        <div class="product-price">
+                                            <span class="current-price">QAR 525.00</span>
+                                            <span class="original-price">QAR 800</span>
+                                        </div>
+                                        <div class="product-rating">
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- Product 8 -->
+                                <a href="/" class="product-card">
+                                    <div class="product-image">
+                                        <img src="assets/images/product.png" alt="Ingco 1500W Demolition Hammer">
+                                        <button class="wishlist-btn">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <button class="btn btn-secondary">ADD TO CART</button>
+                                        <h3 class="product-title">Ingco 1500W Demolition...</h3>
+                                        <div class="product-price">
+                                            <span class="current-price">QAR 525.00</span>
+                                            <span class="original-price">QAR 800</span>
+                                        </div>
+                                        <div class="product-rating">
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- Product 9 -->
+                                <a href="/" class="product-card">
+                                    <div class="product-image">
+                                        <img src="assets/images/product.png" alt="Ingco 1500W Demolition Hammer">
+                                        <button class="wishlist-btn">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <button class="btn btn-secondary">ADD TO CART</button>
+                                        <h3 class="product-title">Ingco 1500W Demolition...</h3>
+                                        <div class="product-price">
+                                            <span class="current-price">QAR 525.00</span>
+                                            <span class="original-price">QAR 800</span>
+                                        </div>
+                                        <div class="product-rating">
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- Product 10 -->
+                                <a href="/" class="product-card">
+                                    <div class="product-image">
+                                        <img src="assets/images/product.png" alt="Ingco 1500W Demolition Hammer">
+                                        <button class="wishlist-btn">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <button class="btn btn-secondary">ADD TO CART</button>
+                                        <h3 class="product-title">Ingco 1500W Demolition...</h3>
+                                        <div class="product-price">
+                                            <span class="current-price">QAR 525.00</span>
+                                            <span class="original-price">QAR 800</span>
+                                        </div>
+                                        <div class="product-rating">
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- Product 11 -->
+                                <a href="/" class="product-card">
+                                    <div class="product-image">
+                                        <img src="assets/images/product.png" alt="Ingco 1500W Demolition Hammer">
+                                        <button class="wishlist-btn">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <button class="btn btn-secondary">ADD TO CART</button>
+                                        <h3 class="product-title">Ingco 1500W Demolition...</h3>
+                                        <div class="product-price">
+                                            <span class="current-price">QAR 525.00</span>
+                                            <span class="original-price">QAR 800</span>
+                                        </div>
+                                        <div class="product-rating">
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- Product 12 -->
+                                <a href="/" class="product-card">
+                                    <div class="product-image">
+                                        <img src="assets/images/product.png" alt="Ingco 1500W Demolition Hammer">
+                                        <button class="wishlist-btn">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <button class="btn btn-secondary">ADD TO CART</button>
+                                        <h3 class="product-title">Ingco 1500W Demolition...</h3>
+                                        <div class="product-price">
+                                            <span class="current-price">QAR 525.00</span>
+                                            <span class="original-price">QAR 800</span>
+                                        </div>
+                                        <div class="product-rating">
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Pagination -->
+                            <div class="pagination-section">
+                                <div class="pagination">
+                                    <a href="#" class="page-link active">1</a>
+                                    <a href="#" class="page-link">2</a>
+                                    <a href="#" class="page-link">3</a>
+                                    <a href="#" class="page-link">Next</a>
+                                    <a href="#" class="page-link">10</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+           <!-- CTA Section -->
+           <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <div class="cta-illustration">
+                        <div class="illustration-container">
+                            <figure>
+                                <img src="assets/images/cta-illustration.png" alt="CTA Illustration">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="cta-text">
+                        <h2 class="h2 cta-title">Find Solutions For All Your Inquiries Buy Or Sell With Ease</h2>
+                        <p class="cta-description">
+                            We Purchase All Types Of Scrap, Including Metal Scrap, Old Machines, Outdated Machinery,
+                            Used Batteries, And More. Contact Us To Maximize Your Earnings And Get The Ideal Scrap
+                            Solutions For Any Inquiry.
+                        </p>
+                        <button class="btn btn-primary cta-button">
+                            <i class="fas fa-phone"></i>
+                            <span>Contact Us</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+          <!-- Partners Logo Section -->
+          <section class="partners-section">
+            <div class="container">
+                <div class="partners-marquee">
+                    <div class="marquee-content">
+                        <!-- Logo 1 -->
+                        <div class="partner-logo">
+                            <div class="logo-placeholder">
+                                <img src="assets/images/pt1.png" alt="partner-1">
+                            </div>
+                        </div>
+
+                        <!-- Logo 2 -->
+                        <div class="partner-logo">
+                            <div class="logo-placeholder">
+                                <img src="assets/images/pt2.png" alt="partner-2">
+                            </div>
+                        </div>
+
+                        <!-- Logo 3 -->
+                        <div class="partner-logo">
+                            <div class="logo-placeholder">
+                                <img src="assets/images/pt3.png" alt="partner-3">
+                            </div>
+                        </div>
+
+                        <!-- Logo 4 -->
+                        <div class="partner-logo">
+                            <div class="logo-placeholder">
+                                <img src="assets/images/pt4.png" alt="partner-4">
+                            </div>
+                        </div>
+
+                        <!-- Logo 5 -->
+                        <div class="partner-logo">
+                            <div class="logo-placeholder">
+                                <img src="assets/images/pt5.png" alt="partner-5">
+                            </div>
+                        </div>
+
+                        <!-- Logo 6 -->
+                        <div class="partner-logo">
+                            <div class="logo-placeholder">
+                                <img src="assets/images/pt6.png" alt="partner-6">
+                            </div>
+                        </div>
+
+                        <!-- Logo 7 -->
+                        <div class="partner-logo">
+                            <div class="logo-placeholder">
+                                <img src="assets/images/pt7.png" alt="partner-7">
+                            </div>
+                        </div>
+
+                        <!-- Duplicate logos for seamless loop -->
+                        <!-- Logo 1 -->
+                        <div class="partner-logo">
+                            <div class="logo-placeholder">
+                                <img src="assets/images/pt1.png" alt="partner-1">
+                            </div>
+                        </div>
+
+                        <!-- Logo 2 -->
+                        <div class="partner-logo">
+                            <div class="logo-placeholder">
+                                <img src="assets/images/pt2.png" alt="partner-2">
+                            </div>
+                        </div>
+
+                        <!-- Logo 3 -->
+                        <div class="partner-logo">
+                            <div class="logo-placeholder">
+                                <img src="assets/images/pt3.png" alt="partner-3">
+                            </div>
+                        </div>
+
+                        <!-- Logo 4 -->
+                        <div class="partner-logo">
+                            <div class="logo-placeholder">
+                                <img src="assets/images/pt4.png" alt="partner-4">
+                            </div>
+                        </div>
+
+                        <!-- Logo 5 -->
+                        <div class="partner-logo">
+                            <div class="logo-placeholder">
+                                <img src="assets/images/pt5.png" alt="partner-5">
+                            </div>
+                        </div>
+
+                        <!-- Logo 6 -->
+                        <div class="partner-logo">
+                            <div class="logo-placeholder">
+                                <img src="assets/images/pt6.png" alt="partner-6">
+                            </div>
+                        </div>
+
+                        <!-- Logo 7 -->
+                        <div class="partner-logo">
+                            <div class="logo-placeholder">
+                                <img src="assets/images/pt7.png" alt="partner-7">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand Column -->
+                <div class="footer-column brand-column">
+                    <div class="brand-info">
+                        <div class="footer-logo">
+                            <figure>
+                                <img src="assets/images/footer-logo.png" alt="footer-logo">
+                            </figure>
+                        </div>
+                        <p class="brand-description">
+                            Lorem Ipsum Has Been The Industry's Standard<br>
+                            Dummy Text Ever Since The 1500s, When An<br>
+                            Unknown Printer Took A Galley Of Type And<br>
+                            Scrambled It To Make A Type Specimen Book.
+                        </p>
+                        <div class="social-section d-none d-lg-block">
+                            <h4>Connect With Company Name</h4>
+                            <div class="social-links">
+                                <a href="#" class="social-link" aria-label="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-link" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-link" aria-label="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-link" aria-label="WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                                <a href="#" class="social-link" aria-label="YouTube">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Company Column -->
+                <div class="footer-column">
+                    <div class="footer-section">
+                        <h4 class="section-title">Company</h4>
+                        <ul class="footer-links">
+                            <li><a href="./">Home</a></li>
+                            <li><a href="./about-us">About Us</a></li>
+                            <li><a href="./categories">Categories</a></li>
+                            <li><a class="active" href="./buy">Buy</a></li>
+                            <li><a href="./sell">Sell</a></li>
+                            <li><a href="./contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Category Column -->
+                <div class="footer-column">
+                    <div class="footer-section">
+                        <h4 class="section-title">Category</h4>
+                        <ul class="footer-links">
+                            <li><a href="./category/building-materials">Building Materials</a></li>
+                            <li><a href="./category/hand-tools">Hand Tools</a></li>
+                            <li><a href="./category/power-tools">Power Tools</a></li>
+                            <li><a href="./category/electrical">Electrical</a></li>
+                            <li><a href="./category/ppe">PPE</a></li>
+                            <li><a href="./category/decor">Decor</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Column -->
+                <div class="footer-column">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:Info@Xxxxxxxxx.Com">Info@Xxxxxxxxx.Com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:Xxxxxxxxxxxxxxxxxxxxxx">Xxxxxxxxxxxxxxxxxxxxxx</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>
+                                Xxxxxxxxxxxxxxxxxxxxxxxxxx<br>
+                                Xxxxxxxxxxxxxxxxxxxxxxxxxx<br>
+                                Xxxxxxxxxxxxxxxxxxxxxxxxxx<br>
+                                Xxxxxxxxxxxxxxxxxxxxxxxxxx<br>
+                                Xxxxxxxxxxxxxxxxxxxxxxxxxx<br>
+                                Xxxxxxxxxxxxxxxxxxxxxxxxxx
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-section mobile-social-section d-lg-none">
+                    <h4>Connect With Company Name</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright">©2024scrapmarket. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="assets/js/main.js"></script>
+
+    <!-- Mobile Filter Popup -->
+    <div class="mobile-filter-popup" id="mobileFilterPopup">
+        <div class="filter-popup-overlay"></div>
+        <div class="filter-popup-content">
+            <div class="filter-popup-header">
+                <h3>Filter</h3>
+                <button class="close-filter-btn" id="closeFilterBtn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="filter-popup-body">
+                <!-- All Categories Section -->
+                <div class="filter-group">
+                    <h4 class="filter-group-title">All Categories</h4>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="radio" name="mobile-category" value="building-materials">
+                            <span class="radio-mark"></span>
+                            <p class="option-text">Building Materials <span>(20)</span></p>
+                        </label>
+                        <label class="filter-option">
+                            <input type="radio" name="mobile-category" value="hand-tools">
+                            <span class="radio-mark"></span>
+                            <p class="option-text">Hand Tools <span>(20)</span></p>
+                        </label>
+                        <label class="filter-option">
+                            <input type="radio" name="mobile-category" value="power-tools">
+                            <span class="radio-mark"></span>
+                            <p class="option-text">Power Tools <span>(20)</span></p>
+                        </label>
+                        <label class="filter-option">
+                            <input type="radio" name="mobile-category" value="electrical">
+                            <span class="radio-mark"></span>
+                            <p class="option-text">Electrical <span>(20)</span></p>
+                        </label>
+                        <label class="filter-option">
+                            <input type="radio" name="mobile-category" value="ppe">
+                            <span class="radio-mark"></span>
+                            <p class="option-text">PPE <span>(20)</span></p>
+                        </label>
+                        <label class="filter-option">
+                            <input type="radio" name="mobile-category" value="carpet">
+                            <span class="radio-mark"></span>
+                            <p class="option-text">Carpet <span>(20)</span></p>
+                        </label>
+                        <label class="filter-option">
+                            <input type="radio" name="mobile-category" value="decor">
+                            <span class="radio-mark"></span>
+                            <p class="option-text">Decor <span>(20)</span></p>
+                        </label>
+                        <label class="filter-option">
+                            <input type="radio" name="mobile-category" value="cleaning-items">
+                            <span class="radio-mark"></span>
+                            <p class="option-text">Cleaning Items <span>(20)</span></p>
+                        </label>
+                        <label class="filter-option">
+                            <input type="radio" name="mobile-category" value="others">
+                            <span class="radio-mark"></span>
+                            <p class="option-text">Others <span>(20)</span></p>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Brands Section -->
+                <div class="filter-group">
+                    <h4 class="filter-group-title">Brands</h4>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="radio" name="mobile-brand" value="jcb">
+                            <span class="radio-mark"></span>
+                            <p class="option-text">JCB <span>(20)</span></p>
+                        </label>
+                        <label class="filter-option">
+                            <input type="radio" name="mobile-brand" value="powermake">
+                            <span class="radio-mark"></span>
+                            <p class="option-text">POWERMAKE <span>(20)</span></p>
+                        </label>
+                        <label class="filter-option">
+                            <input type="radio" name="mobile-brand" value="ingco">
+                            <span class="radio-mark"></span>
+                            <p class="option-text">INGCO <span>(20)</span></p>
+                        </label>
+                        <label class="filter-option">
+                            <input type="radio" name="mobile-brand" value="pigeon">
+                            <span class="radio-mark"></span>
+                            <p class="option-text">PIGEON <span>(20)</span></p>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Product Tags Section -->
+                <div class="filter-group">
+                    <h4 class="filter-group-title">Product Tags</h4>
+                    <div class="product-tags">
+                        <button class="tag-btn" data-tag="decor">Decor</button>
+                        <button class="tag-btn" data-tag="power-tools">Power Tools</button>
+                        <button class="tag-btn" data-tag="electrical">Electrical</button>
+                        <button class="tag-btn" data-tag="carpet">Carpet</button>
+                        <button class="tag-btn" data-tag="ppe">PPE</button>
+                        <button class="tag-btn" data-tag="cleaning-items">Cleaning Items</button>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-popup-footer">
+                <button class="btn btn-secondary" id="clearMobileFilters">Clear All</button>
+                <button class="btn btn-primary" id="applyMobileFilters">Apply Filters</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Mobile Filter Button -->
+    <button class="floating-filter-btn d-lg-none" id="floatingFilterBtn">
+        <i class="fas fa-filter"></i>
+    </button>
+</body>
+
+</html>

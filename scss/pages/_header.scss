@@ -14,7 +14,7 @@
   padding: 15px 0;
   z-index: 1049;
   background-color: #fff;
-  animation: slideDownHeader 0.8s ease-out;
+  // animation: slideDownHeader 0.8s ease-out;
   transform-origin: top;
 }
 
@@ -148,7 +148,7 @@
           font-weight: 400;
           font-size: 18px;
           @include transition(all, ease, 0.3s);
-          animation: fadeInUp 0.8s ease-out both;
+          // animation: fadeInUp 0.8s ease-out both;
 
           &.active {
             color: $primary-color;
@@ -327,6 +327,9 @@
           padding-right: 0;
           color: $title-color;
           border-bottom: 1px solid #F0F2F4;
+          &.active{
+            color: $primary-color;
+          }
         }
 
         &.submenu i {

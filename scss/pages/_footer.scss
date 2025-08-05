@@ -59,11 +59,15 @@
         
         @media (max-width: 767px) {
             font-size: 13px;
+            margin-bottom: 20px;
         }
     }
 }
 
 .social-section {
+    @include max(767){
+        margin-top: 20px;
+    }
     h4 {
         color: $white;
         font-size: 16px;
@@ -228,6 +232,89 @@
         
         @media (max-width: 767px) {
             font-size: 13px;
+        }
+    }
+}
+
+// Connect with Company Section (Mobile Only)
+.connect-company-section {
+    display: none;
+    
+    @include max(767) {
+        display: block;
+        margin-top: 30px;
+        padding-top: 25px;
+        border-top: 1px solid #333;
+    }
+    
+    .connect-title {
+        color: $white;
+        font-size: 18px;
+        font-weight: $font-bold;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .connect-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            
+            label {
+                color: #888;
+                font-size: 14px;
+                font-weight: $font-medium;
+            }
+            
+            input, textarea {
+                padding: 12px 15px;
+                border: 1px solid #333;
+                border-radius: 8px;
+                background-color: #1a1a1a;
+                color: $white;
+                font-size: 14px;
+                transition: all 0.3s ease;
+                
+                &:focus {
+                    outline: none;
+                    border-color: $primary-color;
+                    box-shadow: 0 0 0 2px rgba(83, 179, 44, 0.1);
+                }
+                
+                &::placeholder {
+                    color: #666;
+                }
+            }
+            
+            textarea {
+                resize: vertical;
+                min-height: 80px;
+            }
+        }
+        
+        .submit-btn {
+            background-color: $primary-color;
+            color: $white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: $font-bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            
+            &:hover {
+                background-color: darken($primary-color, 10%);
+                transform: translateY(-1px);
+            }
         }
     }
 }

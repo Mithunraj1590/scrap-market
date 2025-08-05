@@ -75,11 +75,26 @@
   color: $black;
 
   &:hover {
-    background-color: darken($secondary-color, 10%);
+    background-color: $primary-color;
+    color: $white;
   }
 
   &:active {
     background-color: darken($secondary-color, 15%);
+  }
+}
+.btn-secondary-lite {
+  @extend .btn;
+  background-color: $secondary-color-lite;
+  color: $black;
+
+  &:hover {
+    background-color: darken($secondary-color-lite, 10%);
+    color: $black;
+  }
+
+  &:active {
+    background-color: darken($secondary-color-lite, 15%);
   }
 }
 

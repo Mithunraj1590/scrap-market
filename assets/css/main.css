@@ -32,15 +32,15 @@
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: #32694A;
-  --bs-secondary: #FFF1CA;
+  --bs-secondary: #E9CD56;
   --bs-danger: #C60C02;
   --bs-dark: #20222E;
   --bs-primary-rgb: 50, 105, 74;
-  --bs-secondary-rgb: 255, 241, 202;
+  --bs-secondary-rgb: 233, 205, 86;
   --bs-danger-rgb: 198, 12, 2;
   --bs-dark-rgb: 32, 34, 46;
   --bs-primary-text-emphasis: #142a1e;
-  --bs-secondary-text-emphasis: #666051;
+  --bs-secondary-text-emphasis: #5d5222;
   --bs-success-text-emphasis: #0a3622;
   --bs-info-text-emphasis: #055160;
   --bs-warning-text-emphasis: #664d03;
@@ -48,7 +48,7 @@
   --bs-light-text-emphasis: #495057;
   --bs-dark-text-emphasis: #495057;
   --bs-primary-bg-subtle: #d6e1db;
-  --bs-secondary-bg-subtle: #fffcf4;
+  --bs-secondary-bg-subtle: #fbf5dd;
   --bs-success-bg-subtle: #d1e7dd;
   --bs-info-bg-subtle: #cff4fc;
   --bs-warning-bg-subtle: #fff3cd;
@@ -56,7 +56,7 @@
   --bs-light-bg-subtle: #fcfcfd;
   --bs-dark-bg-subtle: #ced4da;
   --bs-primary-border-subtle: #adc3b7;
-  --bs-secondary-border-subtle: #fff9ea;
+  --bs-secondary-border-subtle: #f6ebbb;
   --bs-success-border-subtle: #a3cfbb;
   --bs-info-border-subtle: #9eeaf9;
   --bs-warning-border-subtle: #ffe69c;
@@ -136,7 +136,7 @@
   --bs-tertiary-bg: #2b3035;
   --bs-tertiary-bg-rgb: 43, 48, 53;
   --bs-primary-text-emphasis: #84a592;
-  --bs-secondary-text-emphasis: #fff7df;
+  --bs-secondary-text-emphasis: #f2e19a;
   --bs-success-text-emphasis: #75b798;
   --bs-info-text-emphasis: #6edff6;
   --bs-warning-text-emphasis: #ffda6a;
@@ -144,7 +144,7 @@
   --bs-light-text-emphasis: #f8f9fa;
   --bs-dark-text-emphasis: #dee2e6;
   --bs-primary-bg-subtle: #0a150f;
-  --bs-secondary-bg-subtle: #333028;
+  --bs-secondary-bg-subtle: #2f2911;
   --bs-success-bg-subtle: #051b11;
   --bs-info-bg-subtle: #032830;
   --bs-warning-bg-subtle: #332701;
@@ -152,7 +152,7 @@
   --bs-light-bg-subtle: #343a40;
   --bs-dark-bg-subtle: #1a1d20;
   --bs-primary-border-subtle: #1e3f2c;
-  --bs-secondary-border-subtle: #999179;
+  --bs-secondary-border-subtle: #8c7b34;
   --bs-success-border-subtle: #0f5132;
   --bs-info-border-subtle: #087990;
   --bs-warning-border-subtle: #997404;
@@ -2203,13 +2203,13 @@ progress {
 
 .table-secondary {
   --bs-table-color: #000;
-  --bs-table-bg: #fffcf4;
-  --bs-table-border-color: #cccac3;
-  --bs-table-striped-bg: #f2efe8;
+  --bs-table-bg: #fbf5dd;
+  --bs-table-border-color: #c9c4b1;
+  --bs-table-striped-bg: #eee9d2;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #e6e3dc;
+  --bs-table-active-bg: #e2ddc7;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #ece9e2;
+  --bs-table-hover-bg: #e8e3cc;
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -2777,7 +2777,7 @@ textarea.form-control-lg {
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
 }
-.btn-check[disabled] + .btn, .btn-check[disabled] + .btn-outline-danger, .btn-check[disabled] + .btn-outline-success, .btn-check[disabled] + .btn-outline-secondary, .btn-check[disabled] + .btn-outline-primary, .btn-check[disabled] + .btn-dark, .btn-check[disabled] + .btn-light, .btn-check[disabled] + .btn-info, .btn-check[disabled] + .btn-warning, .btn-check[disabled] + .btn-danger, .btn-check[disabled] + .btn-success, .btn-check[disabled] + .btn-secondary, .btn-check[disabled] + .btn-primary, .btn-check:disabled + .btn, .btn-check:disabled + .btn-outline-danger, .btn-check:disabled + .btn-outline-success, .btn-check:disabled + .btn-outline-secondary, .btn-check:disabled + .btn-outline-primary, .btn-check:disabled + .btn-dark, .btn-check:disabled + .btn-light, .btn-check:disabled + .btn-info, .btn-check:disabled + .btn-warning, .btn-check:disabled + .btn-danger, .btn-check:disabled + .btn-success, .btn-check:disabled + .btn-secondary, .btn-check:disabled + .btn-primary {
+.btn-check[disabled] + .btn, .btn-check[disabled] + .btn-outline-danger, .btn-check[disabled] + .btn-outline-success, .btn-check[disabled] + .btn-outline-secondary, .btn-check[disabled] + .btn-outline-primary, .btn-check[disabled] + .btn-dark, .btn-check[disabled] + .btn-light, .btn-check[disabled] + .btn-info, .btn-check[disabled] + .btn-warning, .btn-check[disabled] + .btn-danger, .btn-check[disabled] + .btn-success, .btn-check[disabled] + .btn-secondary-lite, .btn-check[disabled] + .btn-secondary, .btn-check[disabled] + .btn-primary, .btn-check:disabled + .btn, .btn-check:disabled + .btn-outline-danger, .btn-check:disabled + .btn-outline-success, .btn-check:disabled + .btn-outline-secondary, .btn-check:disabled + .btn-outline-primary, .btn-check:disabled + .btn-dark, .btn-check:disabled + .btn-light, .btn-check:disabled + .btn-info, .btn-check:disabled + .btn-warning, .btn-check:disabled + .btn-danger, .btn-check:disabled + .btn-success, .btn-check:disabled + .btn-secondary-lite, .btn-check:disabled + .btn-secondary, .btn-check:disabled + .btn-primary {
   pointer-events: none;
   -webkit-filter: none;
           filter: none;
@@ -3046,11 +3046,11 @@ textarea.form-control-lg {
 .input-group > .form-floating:focus-within {
   z-index: 5;
 }
-.input-group .btn, .input-group .btn-outline-danger, .input-group .btn-outline-success, .input-group .btn-outline-secondary, .input-group .btn-outline-primary, .input-group .btn-dark, .input-group .btn-light, .input-group .btn-info, .input-group .btn-warning, .input-group .btn-danger, .input-group .btn-success, .input-group .btn-secondary, .input-group .btn-primary {
+.input-group .btn, .input-group .btn-outline-danger, .input-group .btn-outline-success, .input-group .btn-outline-secondary, .input-group .btn-outline-primary, .input-group .btn-dark, .input-group .btn-light, .input-group .btn-info, .input-group .btn-warning, .input-group .btn-danger, .input-group .btn-success, .input-group .btn-secondary-lite, .input-group .btn-secondary, .input-group .btn-primary {
   position: relative;
   z-index: 2;
 }
-.input-group .btn:focus, .input-group .btn-outline-danger:focus, .input-group .btn-outline-success:focus, .input-group .btn-outline-secondary:focus, .input-group .btn-outline-primary:focus, .input-group .btn-dark:focus, .input-group .btn-light:focus, .input-group .btn-info:focus, .input-group .btn-warning:focus, .input-group .btn-danger:focus, .input-group .btn-success:focus, .input-group .btn-secondary:focus, .input-group .btn-primary:focus {
+.input-group .btn:focus, .input-group .btn-outline-danger:focus, .input-group .btn-outline-success:focus, .input-group .btn-outline-secondary:focus, .input-group .btn-outline-primary:focus, .input-group .btn-dark:focus, .input-group .btn-light:focus, .input-group .btn-info:focus, .input-group .btn-warning:focus, .input-group .btn-danger:focus, .input-group .btn-success:focus, .input-group .btn-secondary-lite:focus, .input-group .btn-secondary:focus, .input-group .btn-primary:focus {
   z-index: 5;
 }
 
@@ -3087,6 +3087,7 @@ textarea.form-control-lg {
 .input-group-lg > .btn-warning,
 .input-group-lg > .btn-danger,
 .input-group-lg > .btn-success,
+.input-group-lg > .btn-secondary-lite,
 .input-group-lg > .btn-secondary,
 .input-group-lg > .btn-primary {
   padding: 0.5rem 1rem;
@@ -3108,6 +3109,7 @@ textarea.form-control-lg {
 .input-group-sm > .btn-warning,
 .input-group-sm > .btn-danger,
 .input-group-sm > .btn-success,
+.input-group-sm > .btn-secondary-lite,
 .input-group-sm > .btn-secondary,
 .input-group-sm > .btn-primary {
   padding: 0.25rem 0.5rem;
@@ -3331,7 +3333,7 @@ textarea.form-control-lg {
   z-index: 4;
 }
 
-.btn, .btn-outline-danger, .btn-outline-success, .btn-outline-secondary, .btn-outline-primary, .btn-dark, .btn-light, .btn-info, .btn-warning, .btn-danger, .btn-success, .btn-secondary, .btn-primary {
+.btn, .btn-outline-danger, .btn-outline-success, .btn-outline-secondary, .btn-outline-primary, .btn-dark, .btn-light, .btn-info, .btn-warning, .btn-danger, .btn-success, .btn-secondary-lite, .btn-secondary, .btn-primary {
   --bs-btn-padding-x: 0.75rem;
   --bs-btn-padding-y: 0.375rem;
   --bs-btn-font-family: ;
@@ -3371,22 +3373,22 @@ textarea.form-control-lg {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .btn, .btn-outline-danger, .btn-outline-success, .btn-outline-secondary, .btn-outline-primary, .btn-dark, .btn-light, .btn-info, .btn-warning, .btn-danger, .btn-success, .btn-secondary, .btn-primary {
+  .btn, .btn-outline-danger, .btn-outline-success, .btn-outline-secondary, .btn-outline-primary, .btn-dark, .btn-light, .btn-info, .btn-warning, .btn-danger, .btn-success, .btn-secondary-lite, .btn-secondary, .btn-primary {
     -webkit-transition: none;
     transition: none;
   }
 }
-.btn:hover, .btn-outline-danger:hover, .btn-outline-success:hover, .btn-outline-secondary:hover, .btn-outline-primary:hover, .btn-dark:hover, .btn-light:hover, .btn-info:hover, .btn-warning:hover, .btn-danger:hover, .btn-success:hover, .btn-secondary:hover, .btn-primary:hover {
+.btn:hover, .btn-outline-danger:hover, .btn-outline-success:hover, .btn-outline-secondary:hover, .btn-outline-primary:hover, .btn-dark:hover, .btn-light:hover, .btn-info:hover, .btn-warning:hover, .btn-danger:hover, .btn-success:hover, .btn-secondary-lite:hover, .btn-secondary:hover, .btn-primary:hover {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
 }
-.btn-check + .btn:hover, .btn-check + .btn-outline-danger:hover, .btn-check + .btn-outline-success:hover, .btn-check + .btn-outline-secondary:hover, .btn-check + .btn-outline-primary:hover, .btn-check + .btn-dark:hover, .btn-check + .btn-light:hover, .btn-check + .btn-info:hover, .btn-check + .btn-warning:hover, .btn-check + .btn-danger:hover, .btn-check + .btn-success:hover, .btn-check + .btn-secondary:hover, .btn-check + .btn-primary:hover {
+.btn-check + .btn:hover, .btn-check + .btn-outline-danger:hover, .btn-check + .btn-outline-success:hover, .btn-check + .btn-outline-secondary:hover, .btn-check + .btn-outline-primary:hover, .btn-check + .btn-dark:hover, .btn-check + .btn-light:hover, .btn-check + .btn-info:hover, .btn-check + .btn-warning:hover, .btn-check + .btn-danger:hover, .btn-check + .btn-success:hover, .btn-check + .btn-secondary-lite:hover, .btn-check + .btn-secondary:hover, .btn-check + .btn-primary:hover {
   color: var(--bs-btn-color);
   background-color: var(--bs-btn-bg);
   border-color: var(--bs-btn-border-color);
 }
-.btn:focus-visible, .btn-outline-danger:focus-visible, .btn-outline-success:focus-visible, .btn-outline-secondary:focus-visible, .btn-outline-primary:focus-visible, .btn-dark:focus-visible, .btn-light:focus-visible, .btn-info:focus-visible, .btn-warning:focus-visible, .btn-danger:focus-visible, .btn-success:focus-visible, .btn-secondary:focus-visible, .btn-primary:focus-visible {
+.btn:focus-visible, .btn-outline-danger:focus-visible, .btn-outline-success:focus-visible, .btn-outline-secondary:focus-visible, .btn-outline-primary:focus-visible, .btn-dark:focus-visible, .btn-light:focus-visible, .btn-info:focus-visible, .btn-warning:focus-visible, .btn-danger:focus-visible, .btn-success:focus-visible, .btn-secondary-lite:focus-visible, .btn-secondary:focus-visible, .btn-primary:focus-visible {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
@@ -3394,26 +3396,26 @@ textarea.form-control-lg {
   -webkit-box-shadow: var(--bs-btn-focus-box-shadow);
           box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn-check:focus-visible + .btn, .btn-check:focus-visible + .btn-outline-danger, .btn-check:focus-visible + .btn-outline-success, .btn-check:focus-visible + .btn-outline-secondary, .btn-check:focus-visible + .btn-outline-primary, .btn-check:focus-visible + .btn-dark, .btn-check:focus-visible + .btn-light, .btn-check:focus-visible + .btn-info, .btn-check:focus-visible + .btn-warning, .btn-check:focus-visible + .btn-danger, .btn-check:focus-visible + .btn-success, .btn-check:focus-visible + .btn-secondary, .btn-check:focus-visible + .btn-primary {
+.btn-check:focus-visible + .btn, .btn-check:focus-visible + .btn-outline-danger, .btn-check:focus-visible + .btn-outline-success, .btn-check:focus-visible + .btn-outline-secondary, .btn-check:focus-visible + .btn-outline-primary, .btn-check:focus-visible + .btn-dark, .btn-check:focus-visible + .btn-light, .btn-check:focus-visible + .btn-info, .btn-check:focus-visible + .btn-warning, .btn-check:focus-visible + .btn-danger, .btn-check:focus-visible + .btn-success, .btn-check:focus-visible + .btn-secondary-lite, .btn-check:focus-visible + .btn-secondary, .btn-check:focus-visible + .btn-primary {
   border-color: var(--bs-btn-hover-border-color);
   outline: 0;
   -webkit-box-shadow: var(--bs-btn-focus-box-shadow);
           box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn-check:checked + .btn, .btn-check:checked + .btn-outline-danger, .btn-check:checked + .btn-outline-success, .btn-check:checked + .btn-outline-secondary, .btn-check:checked + .btn-outline-primary, .btn-check:checked + .btn-dark, .btn-check:checked + .btn-light, .btn-check:checked + .btn-info, .btn-check:checked + .btn-warning, .btn-check:checked + .btn-danger, .btn-check:checked + .btn-success, .btn-check:checked + .btn-secondary, .btn-check:checked + .btn-primary, :not(.btn-check) + .btn:active, :not(.btn-check) + .btn-outline-danger:active, :not(.btn-check) + .btn-outline-success:active, :not(.btn-check) + .btn-outline-secondary:active, :not(.btn-check) + .btn-outline-primary:active, :not(.btn-check) + .btn-dark:active, :not(.btn-check) + .btn-light:active, :not(.btn-check) + .btn-info:active, :not(.btn-check) + .btn-warning:active, :not(.btn-check) + .btn-danger:active, :not(.btn-check) + .btn-success:active, :not(.btn-check) + .btn-secondary:active, :not(.btn-check) + .btn-primary:active, .btn:first-child:active, .btn-outline-danger:first-child:active, .btn-outline-success:first-child:active, .btn-outline-secondary:first-child:active, .btn-outline-primary:first-child:active, .btn-dark:first-child:active, .btn-light:first-child:active, .btn-info:first-child:active, .btn-warning:first-child:active, .btn-danger:first-child:active, .btn-success:first-child:active, .btn-secondary:first-child:active, .btn-primary:first-child:active, .btn.active, .active.btn-outline-danger, .active.btn-outline-success, .active.btn-outline-secondary, .active.btn-outline-primary, .active.btn-dark, .active.btn-light, .active.btn-info, .active.btn-warning, .active.btn-danger, .active.btn-success, .active.btn-secondary, .active.btn-primary, .btn.show, .show.btn-outline-danger, .show.btn-outline-success, .show.btn-outline-secondary, .show.btn-outline-primary, .show.btn-dark, .show.btn-light, .show.btn-info, .show.btn-warning, .show.btn-danger, .show.btn-success, .show.btn-secondary, .show.btn-primary {
+.btn-check:checked + .btn, .btn-check:checked + .btn-outline-danger, .btn-check:checked + .btn-outline-success, .btn-check:checked + .btn-outline-secondary, .btn-check:checked + .btn-outline-primary, .btn-check:checked + .btn-dark, .btn-check:checked + .btn-light, .btn-check:checked + .btn-info, .btn-check:checked + .btn-warning, .btn-check:checked + .btn-danger, .btn-check:checked + .btn-success, .btn-check:checked + .btn-secondary-lite, .btn-check:checked + .btn-secondary, .btn-check:checked + .btn-primary, :not(.btn-check) + .btn:active, :not(.btn-check) + .btn-outline-danger:active, :not(.btn-check) + .btn-outline-success:active, :not(.btn-check) + .btn-outline-secondary:active, :not(.btn-check) + .btn-outline-primary:active, :not(.btn-check) + .btn-dark:active, :not(.btn-check) + .btn-light:active, :not(.btn-check) + .btn-info:active, :not(.btn-check) + .btn-warning:active, :not(.btn-check) + .btn-danger:active, :not(.btn-check) + .btn-success:active, :not(.btn-check) + .btn-secondary-lite:active, :not(.btn-check) + .btn-secondary:active, :not(.btn-check) + .btn-primary:active, .btn:first-child:active, .btn-outline-danger:first-child:active, .btn-outline-success:first-child:active, .btn-outline-secondary:first-child:active, .btn-outline-primary:first-child:active, .btn-dark:first-child:active, .btn-light:first-child:active, .btn-info:first-child:active, .btn-warning:first-child:active, .btn-danger:first-child:active, .btn-success:first-child:active, .btn-secondary-lite:first-child:active, .btn-secondary:first-child:active, .btn-primary:first-child:active, .btn.active, .active.btn-outline-danger, .active.btn-outline-success, .active.btn-outline-secondary, .active.btn-outline-primary, .active.btn-dark, .active.btn-light, .active.btn-info, .active.btn-warning, .active.btn-danger, .active.btn-success, .active.btn-secondary-lite, .active.btn-secondary, .active.btn-primary, .btn.show, .show.btn-outline-danger, .show.btn-outline-success, .show.btn-outline-secondary, .show.btn-outline-primary, .show.btn-dark, .show.btn-light, .show.btn-info, .show.btn-warning, .show.btn-danger, .show.btn-success, .show.btn-secondary-lite, .show.btn-secondary, .show.btn-primary {
   color: var(--bs-btn-active-color);
   background-color: var(--bs-btn-active-bg);
   border-color: var(--bs-btn-active-border-color);
 }
-.btn-check:checked + .btn:focus-visible, .btn-check:checked + .btn-outline-danger:focus-visible, .btn-check:checked + .btn-outline-success:focus-visible, .btn-check:checked + .btn-outline-secondary:focus-visible, .btn-check:checked + .btn-outline-primary:focus-visible, .btn-check:checked + .btn-dark:focus-visible, .btn-check:checked + .btn-light:focus-visible, .btn-check:checked + .btn-info:focus-visible, .btn-check:checked + .btn-warning:focus-visible, .btn-check:checked + .btn-danger:focus-visible, .btn-check:checked + .btn-success:focus-visible, .btn-check:checked + .btn-secondary:focus-visible, .btn-check:checked + .btn-primary:focus-visible, :not(.btn-check) + .btn:active:focus-visible, :not(.btn-check) + .btn-outline-danger:active:focus-visible, :not(.btn-check) + .btn-outline-success:active:focus-visible, :not(.btn-check) + .btn-outline-secondary:active:focus-visible, :not(.btn-check) + .btn-outline-primary:active:focus-visible, :not(.btn-check) + .btn-dark:active:focus-visible, :not(.btn-check) + .btn-light:active:focus-visible, :not(.btn-check) + .btn-info:active:focus-visible, :not(.btn-check) + .btn-warning:active:focus-visible, :not(.btn-check) + .btn-danger:active:focus-visible, :not(.btn-check) + .btn-success:active:focus-visible, :not(.btn-check) + .btn-secondary:active:focus-visible, :not(.btn-check) + .btn-primary:active:focus-visible, .btn:first-child:active:focus-visible, .btn-outline-danger:first-child:active:focus-visible, .btn-outline-success:first-child:active:focus-visible, .btn-outline-secondary:first-child:active:focus-visible, .btn-outline-primary:first-child:active:focus-visible, .btn-dark:first-child:active:focus-visible, .btn-light:first-child:active:focus-visible, .btn-info:first-child:active:focus-visible, .btn-warning:first-child:active:focus-visible, .btn-danger:first-child:active:focus-visible, .btn-success:first-child:active:focus-visible, .btn-secondary:first-child:active:focus-visible, .btn-primary:first-child:active:focus-visible, .btn.active:focus-visible, .active.btn-outline-danger:focus-visible, .active.btn-outline-success:focus-visible, .active.btn-outline-secondary:focus-visible, .active.btn-outline-primary:focus-visible, .active.btn-dark:focus-visible, .active.btn-light:focus-visible, .active.btn-info:focus-visible, .active.btn-warning:focus-visible, .active.btn-danger:focus-visible, .active.btn-success:focus-visible, .active.btn-secondary:focus-visible, .active.btn-primary:focus-visible, .btn.show:focus-visible, .show.btn-outline-danger:focus-visible, .show.btn-outline-success:focus-visible, .show.btn-outline-secondary:focus-visible, .show.btn-outline-primary:focus-visible, .show.btn-dark:focus-visible, .show.btn-light:focus-visible, .show.btn-info:focus-visible, .show.btn-warning:focus-visible, .show.btn-danger:focus-visible, .show.btn-success:focus-visible, .show.btn-secondary:focus-visible, .show.btn-primary:focus-visible {
+.btn-check:checked + .btn:focus-visible, .btn-check:checked + .btn-outline-danger:focus-visible, .btn-check:checked + .btn-outline-success:focus-visible, .btn-check:checked + .btn-outline-secondary:focus-visible, .btn-check:checked + .btn-outline-primary:focus-visible, .btn-check:checked + .btn-dark:focus-visible, .btn-check:checked + .btn-light:focus-visible, .btn-check:checked + .btn-info:focus-visible, .btn-check:checked + .btn-warning:focus-visible, .btn-check:checked + .btn-danger:focus-visible, .btn-check:checked + .btn-success:focus-visible, .btn-check:checked + .btn-secondary-lite:focus-visible, .btn-check:checked + .btn-secondary:focus-visible, .btn-check:checked + .btn-primary:focus-visible, :not(.btn-check) + .btn:active:focus-visible, :not(.btn-check) + .btn-outline-danger:active:focus-visible, :not(.btn-check) + .btn-outline-success:active:focus-visible, :not(.btn-check) + .btn-outline-secondary:active:focus-visible, :not(.btn-check) + .btn-outline-primary:active:focus-visible, :not(.btn-check) + .btn-dark:active:focus-visible, :not(.btn-check) + .btn-light:active:focus-visible, :not(.btn-check) + .btn-info:active:focus-visible, :not(.btn-check) + .btn-warning:active:focus-visible, :not(.btn-check) + .btn-danger:active:focus-visible, :not(.btn-check) + .btn-success:active:focus-visible, :not(.btn-check) + .btn-secondary-lite:active:focus-visible, :not(.btn-check) + .btn-secondary:active:focus-visible, :not(.btn-check) + .btn-primary:active:focus-visible, .btn:first-child:active:focus-visible, .btn-outline-danger:first-child:active:focus-visible, .btn-outline-success:first-child:active:focus-visible, .btn-outline-secondary:first-child:active:focus-visible, .btn-outline-primary:first-child:active:focus-visible, .btn-dark:first-child:active:focus-visible, .btn-light:first-child:active:focus-visible, .btn-info:first-child:active:focus-visible, .btn-warning:first-child:active:focus-visible, .btn-danger:first-child:active:focus-visible, .btn-success:first-child:active:focus-visible, .btn-secondary-lite:first-child:active:focus-visible, .btn-secondary:first-child:active:focus-visible, .btn-primary:first-child:active:focus-visible, .btn.active:focus-visible, .active.btn-outline-danger:focus-visible, .active.btn-outline-success:focus-visible, .active.btn-outline-secondary:focus-visible, .active.btn-outline-primary:focus-visible, .active.btn-dark:focus-visible, .active.btn-light:focus-visible, .active.btn-info:focus-visible, .active.btn-warning:focus-visible, .active.btn-danger:focus-visible, .active.btn-success:focus-visible, .active.btn-secondary-lite:focus-visible, .active.btn-secondary:focus-visible, .active.btn-primary:focus-visible, .btn.show:focus-visible, .show.btn-outline-danger:focus-visible, .show.btn-outline-success:focus-visible, .show.btn-outline-secondary:focus-visible, .show.btn-outline-primary:focus-visible, .show.btn-dark:focus-visible, .show.btn-light:focus-visible, .show.btn-info:focus-visible, .show.btn-warning:focus-visible, .show.btn-danger:focus-visible, .show.btn-success:focus-visible, .show.btn-secondary-lite:focus-visible, .show.btn-secondary:focus-visible, .show.btn-primary:focus-visible {
   -webkit-box-shadow: var(--bs-btn-focus-box-shadow);
           box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn-check:checked:focus-visible + .btn, .btn-check:checked:focus-visible + .btn-outline-danger, .btn-check:checked:focus-visible + .btn-outline-success, .btn-check:checked:focus-visible + .btn-outline-secondary, .btn-check:checked:focus-visible + .btn-outline-primary, .btn-check:checked:focus-visible + .btn-dark, .btn-check:checked:focus-visible + .btn-light, .btn-check:checked:focus-visible + .btn-info, .btn-check:checked:focus-visible + .btn-warning, .btn-check:checked:focus-visible + .btn-danger, .btn-check:checked:focus-visible + .btn-success, .btn-check:checked:focus-visible + .btn-secondary, .btn-check:checked:focus-visible + .btn-primary {
+.btn-check:checked:focus-visible + .btn, .btn-check:checked:focus-visible + .btn-outline-danger, .btn-check:checked:focus-visible + .btn-outline-success, .btn-check:checked:focus-visible + .btn-outline-secondary, .btn-check:checked:focus-visible + .btn-outline-primary, .btn-check:checked:focus-visible + .btn-dark, .btn-check:checked:focus-visible + .btn-light, .btn-check:checked:focus-visible + .btn-info, .btn-check:checked:focus-visible + .btn-warning, .btn-check:checked:focus-visible + .btn-danger, .btn-check:checked:focus-visible + .btn-success, .btn-check:checked:focus-visible + .btn-secondary-lite, .btn-check:checked:focus-visible + .btn-secondary, .btn-check:checked:focus-visible + .btn-primary {
   -webkit-box-shadow: var(--bs-btn-focus-box-shadow);
           box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn:disabled, .btn-outline-danger:disabled, .btn-outline-success:disabled, .btn-outline-secondary:disabled, .btn-outline-primary:disabled, .btn-dark:disabled, .btn-light:disabled, .btn-info:disabled, .btn-warning:disabled, .btn-danger:disabled, .btn-success:disabled, .btn-secondary:disabled, .btn-primary:disabled, .btn.disabled, .disabled.btn-outline-danger, .disabled.btn-outline-success, .disabled.btn-outline-secondary, .disabled.btn-outline-primary, .disabled.btn-dark, .disabled.btn-light, .disabled.btn-info, .disabled.btn-warning, .disabled.btn-danger, .disabled.btn-success, .disabled.btn-secondary, .disabled.btn-primary, fieldset:disabled .btn, fieldset:disabled .btn-outline-danger, fieldset:disabled .btn-outline-success, fieldset:disabled .btn-outline-secondary, fieldset:disabled .btn-outline-primary, fieldset:disabled .btn-dark, fieldset:disabled .btn-light, fieldset:disabled .btn-info, fieldset:disabled .btn-warning, fieldset:disabled .btn-danger, fieldset:disabled .btn-success, fieldset:disabled .btn-secondary, fieldset:disabled .btn-primary {
+.btn:disabled, .btn-outline-danger:disabled, .btn-outline-success:disabled, .btn-outline-secondary:disabled, .btn-outline-primary:disabled, .btn-dark:disabled, .btn-light:disabled, .btn-info:disabled, .btn-warning:disabled, .btn-danger:disabled, .btn-success:disabled, .btn-secondary-lite:disabled, .btn-secondary:disabled, .btn-primary:disabled, .btn.disabled, .disabled.btn-outline-danger, .disabled.btn-outline-success, .disabled.btn-outline-secondary, .disabled.btn-outline-primary, .disabled.btn-dark, .disabled.btn-light, .disabled.btn-info, .disabled.btn-warning, .disabled.btn-danger, .disabled.btn-success, .disabled.btn-secondary-lite, .disabled.btn-secondary, .disabled.btn-primary, fieldset:disabled .btn, fieldset:disabled .btn-outline-danger, fieldset:disabled .btn-outline-success, fieldset:disabled .btn-outline-secondary, fieldset:disabled .btn-outline-primary, fieldset:disabled .btn-dark, fieldset:disabled .btn-light, fieldset:disabled .btn-info, fieldset:disabled .btn-warning, fieldset:disabled .btn-danger, fieldset:disabled .btn-success, fieldset:disabled .btn-secondary-lite, fieldset:disabled .btn-secondary, fieldset:disabled .btn-primary {
   color: var(--bs-btn-disabled-color);
   pointer-events: none;
   background-color: var(--bs-btn-disabled-bg);
@@ -3440,19 +3442,19 @@ textarea.form-control-lg {
 
 .btn-secondary {
   --bs-btn-color: #000;
-  --bs-btn-bg: #FFF1CA;
-  --bs-btn-border-color: #FFF1CA;
+  --bs-btn-bg: #E9CD56;
+  --bs-btn-border-color: #E9CD56;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #fff3d2;
-  --bs-btn-hover-border-color: #fff2cf;
-  --bs-btn-focus-shadow-rgb: 217, 205, 172;
+  --bs-btn-hover-bg: #ecd56f;
+  --bs-btn-hover-border-color: #ebd267;
+  --bs-btn-focus-shadow-rgb: 198, 174, 73;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #fff4d5;
-  --bs-btn-active-border-color: #fff2cf;
+  --bs-btn-active-bg: #edd778;
+  --bs-btn-active-border-color: #ebd267;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #000;
-  --bs-btn-disabled-bg: #FFF1CA;
-  --bs-btn-disabled-border-color: #FFF1CA;
+  --bs-btn-disabled-bg: #E9CD56;
+  --bs-btn-disabled-border-color: #E9CD56;
 }
 
 .btn-danger {
@@ -3507,19 +3509,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-secondary {
-  --bs-btn-color: #FFF1CA;
-  --bs-btn-border-color: #FFF1CA;
+  --bs-btn-color: #E9CD56;
+  --bs-btn-border-color: #E9CD56;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #FFF1CA;
-  --bs-btn-hover-border-color: #FFF1CA;
-  --bs-btn-focus-shadow-rgb: 255, 241, 202;
+  --bs-btn-hover-bg: #E9CD56;
+  --bs-btn-hover-border-color: #E9CD56;
+  --bs-btn-focus-shadow-rgb: 233, 205, 86;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #FFF1CA;
-  --bs-btn-active-border-color: #FFF1CA;
+  --bs-btn-active-bg: #E9CD56;
+  --bs-btn-active-border-color: #E9CD56;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #FFF1CA;
+  --bs-btn-disabled-color: #E9CD56;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #FFF1CA;
+  --bs-btn-disabled-border-color: #E9CD56;
   --bs-gradient: none;
 }
 
@@ -3579,14 +3581,14 @@ textarea.form-control-lg {
   color: var(--bs-btn-hover-color);
 }
 
-.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .btn-outline-danger, .btn-group-lg > .btn-outline-success, .btn-group-lg > .btn-outline-secondary, .btn-group-lg > .btn-outline-primary, .btn-group-lg > .btn-dark, .btn-group-lg > .btn-light, .btn-group-lg > .btn-info, .btn-group-lg > .btn-warning, .btn-group-lg > .btn-danger, .btn-group-lg > .btn-success, .btn-group-lg > .btn-secondary, .btn-group-lg > .btn-primary {
+.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .btn-outline-danger, .btn-group-lg > .btn-outline-success, .btn-group-lg > .btn-outline-secondary, .btn-group-lg > .btn-outline-primary, .btn-group-lg > .btn-dark, .btn-group-lg > .btn-light, .btn-group-lg > .btn-info, .btn-group-lg > .btn-warning, .btn-group-lg > .btn-danger, .btn-group-lg > .btn-success, .btn-group-lg > .btn-secondary-lite, .btn-group-lg > .btn-secondary, .btn-group-lg > .btn-primary {
   --bs-btn-padding-y: 0.5rem;
   --bs-btn-padding-x: 1rem;
   --bs-btn-font-size: 1.25rem;
   --bs-btn-border-radius: var(--bs-border-radius-lg);
 }
 
-.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .btn-outline-danger, .btn-group-sm > .btn-outline-success, .btn-group-sm > .btn-outline-secondary, .btn-group-sm > .btn-outline-primary, .btn-group-sm > .btn-dark, .btn-group-sm > .btn-light, .btn-group-sm > .btn-info, .btn-group-sm > .btn-warning, .btn-group-sm > .btn-danger, .btn-group-sm > .btn-success, .btn-group-sm > .btn-secondary, .btn-group-sm > .btn-primary {
+.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .btn-outline-danger, .btn-group-sm > .btn-outline-success, .btn-group-sm > .btn-outline-secondary, .btn-group-sm > .btn-outline-primary, .btn-group-sm > .btn-dark, .btn-group-sm > .btn-light, .btn-group-sm > .btn-info, .btn-group-sm > .btn-warning, .btn-group-sm > .btn-danger, .btn-group-sm > .btn-success, .btn-group-sm > .btn-secondary-lite, .btn-group-sm > .btn-secondary, .btn-group-sm > .btn-primary {
   --bs-btn-padding-y: 0.25rem;
   --bs-btn-padding-x: 0.5rem;
   --bs-btn-font-size: 0.875rem;
@@ -3961,7 +3963,7 @@ textarea.form-control-lg {
   display: inline-flex;
   vertical-align: middle;
 }
-.btn-group > .btn, .btn-group > .btn-outline-danger, .btn-group > .btn-outline-success, .btn-group > .btn-outline-secondary, .btn-group > .btn-outline-primary, .btn-group > .btn-dark, .btn-group > .btn-light, .btn-group > .btn-info, .btn-group > .btn-warning, .btn-group > .btn-danger, .btn-group > .btn-success, .btn-group > .btn-secondary, .btn-group > .btn-primary,
+.btn-group > .btn, .btn-group > .btn-outline-danger, .btn-group > .btn-outline-success, .btn-group > .btn-outline-secondary, .btn-group > .btn-outline-primary, .btn-group > .btn-dark, .btn-group > .btn-light, .btn-group > .btn-info, .btn-group > .btn-warning, .btn-group > .btn-danger, .btn-group > .btn-success, .btn-group > .btn-secondary-lite, .btn-group > .btn-secondary, .btn-group > .btn-primary,
 .btn-group-vertical > .btn,
 .btn-group-vertical > .btn-outline-danger,
 .btn-group-vertical > .btn-outline-success,
@@ -3973,6 +3975,7 @@ textarea.form-control-lg {
 .btn-group-vertical > .btn-warning,
 .btn-group-vertical > .btn-danger,
 .btn-group-vertical > .btn-success,
+.btn-group-vertical > .btn-secondary-lite,
 .btn-group-vertical > .btn-secondary,
 .btn-group-vertical > .btn-primary {
   position: relative;
@@ -3980,7 +3983,7 @@ textarea.form-control-lg {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
 }
-.btn-group > .btn-check:checked + .btn, .btn-group > .btn-check:checked + .btn-outline-danger, .btn-group > .btn-check:checked + .btn-outline-success, .btn-group > .btn-check:checked + .btn-outline-secondary, .btn-group > .btn-check:checked + .btn-outline-primary, .btn-group > .btn-check:checked + .btn-dark, .btn-group > .btn-check:checked + .btn-light, .btn-group > .btn-check:checked + .btn-info, .btn-group > .btn-check:checked + .btn-warning, .btn-group > .btn-check:checked + .btn-danger, .btn-group > .btn-check:checked + .btn-success, .btn-group > .btn-check:checked + .btn-secondary, .btn-group > .btn-check:checked + .btn-primary,
+.btn-group > .btn-check:checked + .btn, .btn-group > .btn-check:checked + .btn-outline-danger, .btn-group > .btn-check:checked + .btn-outline-success, .btn-group > .btn-check:checked + .btn-outline-secondary, .btn-group > .btn-check:checked + .btn-outline-primary, .btn-group > .btn-check:checked + .btn-dark, .btn-group > .btn-check:checked + .btn-light, .btn-group > .btn-check:checked + .btn-info, .btn-group > .btn-check:checked + .btn-warning, .btn-group > .btn-check:checked + .btn-danger, .btn-group > .btn-check:checked + .btn-success, .btn-group > .btn-check:checked + .btn-secondary-lite, .btn-group > .btn-check:checked + .btn-secondary, .btn-group > .btn-check:checked + .btn-primary,
 .btn-group > .btn-check:focus + .btn,
 .btn-group > .btn-check:focus + .btn-outline-danger,
 .btn-group > .btn-check:focus + .btn-outline-success,
@@ -3992,6 +3995,7 @@ textarea.form-control-lg {
 .btn-group > .btn-check:focus + .btn-warning,
 .btn-group > .btn-check:focus + .btn-danger,
 .btn-group > .btn-check:focus + .btn-success,
+.btn-group > .btn-check:focus + .btn-secondary-lite,
 .btn-group > .btn-check:focus + .btn-secondary,
 .btn-group > .btn-check:focus + .btn-primary,
 .btn-group > .btn:hover,
@@ -4005,6 +4009,7 @@ textarea.form-control-lg {
 .btn-group > .btn-warning:hover,
 .btn-group > .btn-danger:hover,
 .btn-group > .btn-success:hover,
+.btn-group > .btn-secondary-lite:hover,
 .btn-group > .btn-secondary:hover,
 .btn-group > .btn-primary:hover,
 .btn-group > .btn:focus,
@@ -4018,6 +4023,7 @@ textarea.form-control-lg {
 .btn-group > .btn-warning:focus,
 .btn-group > .btn-danger:focus,
 .btn-group > .btn-success:focus,
+.btn-group > .btn-secondary-lite:focus,
 .btn-group > .btn-secondary:focus,
 .btn-group > .btn-primary:focus,
 .btn-group > .btn:active,
@@ -4031,6 +4037,7 @@ textarea.form-control-lg {
 .btn-group > .btn-warning:active,
 .btn-group > .btn-danger:active,
 .btn-group > .btn-success:active,
+.btn-group > .btn-secondary-lite:active,
 .btn-group > .btn-secondary:active,
 .btn-group > .btn-primary:active,
 .btn-group > .btn.active,
@@ -4044,6 +4051,7 @@ textarea.form-control-lg {
 .btn-group > .active.btn-warning,
 .btn-group > .active.btn-danger,
 .btn-group > .active.btn-success,
+.btn-group > .active.btn-secondary-lite,
 .btn-group > .active.btn-secondary,
 .btn-group > .active.btn-primary,
 .btn-group-vertical > .btn-check:checked + .btn,
@@ -4057,6 +4065,7 @@ textarea.form-control-lg {
 .btn-group-vertical > .btn-check:checked + .btn-warning,
 .btn-group-vertical > .btn-check:checked + .btn-danger,
 .btn-group-vertical > .btn-check:checked + .btn-success,
+.btn-group-vertical > .btn-check:checked + .btn-secondary-lite,
 .btn-group-vertical > .btn-check:checked + .btn-secondary,
 .btn-group-vertical > .btn-check:checked + .btn-primary,
 .btn-group-vertical > .btn-check:focus + .btn,
@@ -4070,6 +4079,7 @@ textarea.form-control-lg {
 .btn-group-vertical > .btn-check:focus + .btn-warning,
 .btn-group-vertical > .btn-check:focus + .btn-danger,
 .btn-group-vertical > .btn-check:focus + .btn-success,
+.btn-group-vertical > .btn-check:focus + .btn-secondary-lite,
 .btn-group-vertical > .btn-check:focus + .btn-secondary,
 .btn-group-vertical > .btn-check:focus + .btn-primary,
 .btn-group-vertical > .btn:hover,
@@ -4083,6 +4093,7 @@ textarea.form-control-lg {
 .btn-group-vertical > .btn-warning:hover,
 .btn-group-vertical > .btn-danger:hover,
 .btn-group-vertical > .btn-success:hover,
+.btn-group-vertical > .btn-secondary-lite:hover,
 .btn-group-vertical > .btn-secondary:hover,
 .btn-group-vertical > .btn-primary:hover,
 .btn-group-vertical > .btn:focus,
@@ -4096,6 +4107,7 @@ textarea.form-control-lg {
 .btn-group-vertical > .btn-warning:focus,
 .btn-group-vertical > .btn-danger:focus,
 .btn-group-vertical > .btn-success:focus,
+.btn-group-vertical > .btn-secondary-lite:focus,
 .btn-group-vertical > .btn-secondary:focus,
 .btn-group-vertical > .btn-primary:focus,
 .btn-group-vertical > .btn:active,
@@ -4109,6 +4121,7 @@ textarea.form-control-lg {
 .btn-group-vertical > .btn-warning:active,
 .btn-group-vertical > .btn-danger:active,
 .btn-group-vertical > .btn-success:active,
+.btn-group-vertical > .btn-secondary-lite:active,
 .btn-group-vertical > .btn-secondary:active,
 .btn-group-vertical > .btn-primary:active,
 .btn-group-vertical > .btn.active,
@@ -4122,6 +4135,7 @@ textarea.form-control-lg {
 .btn-group-vertical > .active.btn-warning,
 .btn-group-vertical > .active.btn-danger,
 .btn-group-vertical > .active.btn-success,
+.btn-group-vertical > .active.btn-secondary-lite,
 .btn-group-vertical > .active.btn-secondary,
 .btn-group-vertical > .active.btn-primary {
   z-index: 1;
@@ -4144,11 +4158,11 @@ textarea.form-control-lg {
 .btn-group {
   border-radius: var(--bs-border-radius);
 }
-.btn-group > :not(.btn-check:first-child) + .btn, .btn-group > :not(.btn-check:first-child) + .btn-outline-danger, .btn-group > :not(.btn-check:first-child) + .btn-outline-success, .btn-group > :not(.btn-check:first-child) + .btn-outline-secondary, .btn-group > :not(.btn-check:first-child) + .btn-outline-primary, .btn-group > :not(.btn-check:first-child) + .btn-dark, .btn-group > :not(.btn-check:first-child) + .btn-light, .btn-group > :not(.btn-check:first-child) + .btn-info, .btn-group > :not(.btn-check:first-child) + .btn-warning, .btn-group > :not(.btn-check:first-child) + .btn-danger, .btn-group > :not(.btn-check:first-child) + .btn-success, .btn-group > :not(.btn-check:first-child) + .btn-secondary, .btn-group > :not(.btn-check:first-child) + .btn-primary,
+.btn-group > :not(.btn-check:first-child) + .btn, .btn-group > :not(.btn-check:first-child) + .btn-outline-danger, .btn-group > :not(.btn-check:first-child) + .btn-outline-success, .btn-group > :not(.btn-check:first-child) + .btn-outline-secondary, .btn-group > :not(.btn-check:first-child) + .btn-outline-primary, .btn-group > :not(.btn-check:first-child) + .btn-dark, .btn-group > :not(.btn-check:first-child) + .btn-light, .btn-group > :not(.btn-check:first-child) + .btn-info, .btn-group > :not(.btn-check:first-child) + .btn-warning, .btn-group > :not(.btn-check:first-child) + .btn-danger, .btn-group > :not(.btn-check:first-child) + .btn-success, .btn-group > :not(.btn-check:first-child) + .btn-secondary-lite, .btn-group > :not(.btn-check:first-child) + .btn-secondary, .btn-group > :not(.btn-check:first-child) + .btn-primary,
 .btn-group > .btn-group:not(:first-child) {
   margin-left: calc(-1 * var(--bs-border-width));
 }
-.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-outline-danger:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-outline-success:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-outline-secondary:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-outline-primary:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-dark:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-light:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-info:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-warning:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-danger:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-success:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-secondary:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-primary:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-outline-danger:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-outline-success:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-outline-secondary:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-outline-primary:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-dark:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-light:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-info:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-warning:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-danger:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-success:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-secondary-lite:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-secondary:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-primary:not(:last-child):not(.dropdown-toggle),
 .btn-group > .btn.dropdown-toggle-split:first-child,
 .btn-group > .dropdown-toggle-split.btn-outline-danger:first-child,
 .btn-group > .dropdown-toggle-split.btn-outline-success:first-child,
@@ -4160,6 +4174,7 @@ textarea.form-control-lg {
 .btn-group > .dropdown-toggle-split.btn-warning:first-child,
 .btn-group > .dropdown-toggle-split.btn-danger:first-child,
 .btn-group > .dropdown-toggle-split.btn-success:first-child,
+.btn-group > .dropdown-toggle-split.btn-secondary-lite:first-child,
 .btn-group > .dropdown-toggle-split.btn-secondary:first-child,
 .btn-group > .dropdown-toggle-split.btn-primary:first-child,
 .btn-group > .btn-group:not(:last-child) > .btn,
@@ -4173,12 +4188,13 @@ textarea.form-control-lg {
 .btn-group > .btn-group:not(:last-child) > .btn-warning,
 .btn-group > .btn-group:not(:last-child) > .btn-danger,
 .btn-group > .btn-group:not(:last-child) > .btn-success,
+.btn-group > .btn-group:not(:last-child) > .btn-secondary-lite,
 .btn-group > .btn-group:not(:last-child) > .btn-secondary,
 .btn-group > .btn-group:not(:last-child) > .btn-primary {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.btn-group > .btn:nth-child(n+3), .btn-group > .btn-outline-danger:nth-child(n+3), .btn-group > .btn-outline-success:nth-child(n+3), .btn-group > .btn-outline-secondary:nth-child(n+3), .btn-group > .btn-outline-primary:nth-child(n+3), .btn-group > .btn-dark:nth-child(n+3), .btn-group > .btn-light:nth-child(n+3), .btn-group > .btn-info:nth-child(n+3), .btn-group > .btn-warning:nth-child(n+3), .btn-group > .btn-danger:nth-child(n+3), .btn-group > .btn-success:nth-child(n+3), .btn-group > .btn-secondary:nth-child(n+3), .btn-group > .btn-primary:nth-child(n+3),
+.btn-group > .btn:nth-child(n+3), .btn-group > .btn-outline-danger:nth-child(n+3), .btn-group > .btn-outline-success:nth-child(n+3), .btn-group > .btn-outline-secondary:nth-child(n+3), .btn-group > .btn-outline-primary:nth-child(n+3), .btn-group > .btn-dark:nth-child(n+3), .btn-group > .btn-light:nth-child(n+3), .btn-group > .btn-info:nth-child(n+3), .btn-group > .btn-warning:nth-child(n+3), .btn-group > .btn-danger:nth-child(n+3), .btn-group > .btn-success:nth-child(n+3), .btn-group > .btn-secondary-lite:nth-child(n+3), .btn-group > .btn-secondary:nth-child(n+3), .btn-group > .btn-primary:nth-child(n+3),
 .btn-group > :not(.btn-check) + .btn,
 .btn-group > :not(.btn-check) + .btn-outline-danger,
 .btn-group > :not(.btn-check) + .btn-outline-success,
@@ -4190,6 +4206,7 @@ textarea.form-control-lg {
 .btn-group > :not(.btn-check) + .btn-warning,
 .btn-group > :not(.btn-check) + .btn-danger,
 .btn-group > :not(.btn-check) + .btn-success,
+.btn-group > :not(.btn-check) + .btn-secondary-lite,
 .btn-group > :not(.btn-check) + .btn-secondary,
 .btn-group > :not(.btn-check) + .btn-primary,
 .btn-group > .btn-group:not(:first-child) > .btn,
@@ -4203,6 +4220,7 @@ textarea.form-control-lg {
 .btn-group > .btn-group:not(:first-child) > .btn-warning,
 .btn-group > .btn-group:not(:first-child) > .btn-danger,
 .btn-group > .btn-group:not(:first-child) > .btn-success,
+.btn-group > .btn-group:not(:first-child) > .btn-secondary-lite,
 .btn-group > .btn-group:not(:first-child) > .btn-secondary,
 .btn-group > .btn-group:not(:first-child) > .btn-primary {
   border-top-left-radius: 0;
@@ -4220,12 +4238,12 @@ textarea.form-control-lg {
   margin-right: 0;
 }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .btn-outline-danger + .dropdown-toggle-split, .btn-group-sm > .btn-outline-success + .dropdown-toggle-split, .btn-group-sm > .btn-outline-secondary + .dropdown-toggle-split, .btn-group-sm > .btn-outline-primary + .dropdown-toggle-split, .btn-group-sm > .btn-dark + .dropdown-toggle-split, .btn-group-sm > .btn-light + .dropdown-toggle-split, .btn-group-sm > .btn-info + .dropdown-toggle-split, .btn-group-sm > .btn-warning + .dropdown-toggle-split, .btn-group-sm > .btn-danger + .dropdown-toggle-split, .btn-group-sm > .btn-success + .dropdown-toggle-split, .btn-group-sm > .btn-secondary + .dropdown-toggle-split, .btn-group-sm > .btn-primary + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .btn-outline-danger + .dropdown-toggle-split, .btn-group-sm > .btn-outline-success + .dropdown-toggle-split, .btn-group-sm > .btn-outline-secondary + .dropdown-toggle-split, .btn-group-sm > .btn-outline-primary + .dropdown-toggle-split, .btn-group-sm > .btn-dark + .dropdown-toggle-split, .btn-group-sm > .btn-light + .dropdown-toggle-split, .btn-group-sm > .btn-info + .dropdown-toggle-split, .btn-group-sm > .btn-warning + .dropdown-toggle-split, .btn-group-sm > .btn-danger + .dropdown-toggle-split, .btn-group-sm > .btn-success + .dropdown-toggle-split, .btn-group-sm > .btn-secondary-lite + .dropdown-toggle-split, .btn-group-sm > .btn-secondary + .dropdown-toggle-split, .btn-group-sm > .btn-primary + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem;
 }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .btn-outline-danger + .dropdown-toggle-split, .btn-group-lg > .btn-outline-success + .dropdown-toggle-split, .btn-group-lg > .btn-outline-secondary + .dropdown-toggle-split, .btn-group-lg > .btn-outline-primary + .dropdown-toggle-split, .btn-group-lg > .btn-dark + .dropdown-toggle-split, .btn-group-lg > .btn-light + .dropdown-toggle-split, .btn-group-lg > .btn-info + .dropdown-toggle-split, .btn-group-lg > .btn-warning + .dropdown-toggle-split, .btn-group-lg > .btn-danger + .dropdown-toggle-split, .btn-group-lg > .btn-success + .dropdown-toggle-split, .btn-group-lg > .btn-secondary + .dropdown-toggle-split, .btn-group-lg > .btn-primary + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .btn-outline-danger + .dropdown-toggle-split, .btn-group-lg > .btn-outline-success + .dropdown-toggle-split, .btn-group-lg > .btn-outline-secondary + .dropdown-toggle-split, .btn-group-lg > .btn-outline-primary + .dropdown-toggle-split, .btn-group-lg > .btn-dark + .dropdown-toggle-split, .btn-group-lg > .btn-light + .dropdown-toggle-split, .btn-group-lg > .btn-info + .dropdown-toggle-split, .btn-group-lg > .btn-warning + .dropdown-toggle-split, .btn-group-lg > .btn-danger + .dropdown-toggle-split, .btn-group-lg > .btn-success + .dropdown-toggle-split, .btn-group-lg > .btn-secondary-lite + .dropdown-toggle-split, .btn-group-lg > .btn-secondary + .dropdown-toggle-split, .btn-group-lg > .btn-primary + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem;
 }
@@ -4242,15 +4260,15 @@ textarea.form-control-lg {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.btn-group-vertical > .btn, .btn-group-vertical > .btn-outline-danger, .btn-group-vertical > .btn-outline-success, .btn-group-vertical > .btn-outline-secondary, .btn-group-vertical > .btn-outline-primary, .btn-group-vertical > .btn-dark, .btn-group-vertical > .btn-light, .btn-group-vertical > .btn-info, .btn-group-vertical > .btn-warning, .btn-group-vertical > .btn-danger, .btn-group-vertical > .btn-success, .btn-group-vertical > .btn-secondary, .btn-group-vertical > .btn-primary,
+.btn-group-vertical > .btn, .btn-group-vertical > .btn-outline-danger, .btn-group-vertical > .btn-outline-success, .btn-group-vertical > .btn-outline-secondary, .btn-group-vertical > .btn-outline-primary, .btn-group-vertical > .btn-dark, .btn-group-vertical > .btn-light, .btn-group-vertical > .btn-info, .btn-group-vertical > .btn-warning, .btn-group-vertical > .btn-danger, .btn-group-vertical > .btn-success, .btn-group-vertical > .btn-secondary-lite, .btn-group-vertical > .btn-secondary, .btn-group-vertical > .btn-primary,
 .btn-group-vertical > .btn-group {
   width: 100%;
 }
-.btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .btn-outline-danger:not(:first-child), .btn-group-vertical > .btn-outline-success:not(:first-child), .btn-group-vertical > .btn-outline-secondary:not(:first-child), .btn-group-vertical > .btn-outline-primary:not(:first-child), .btn-group-vertical > .btn-dark:not(:first-child), .btn-group-vertical > .btn-light:not(:first-child), .btn-group-vertical > .btn-info:not(:first-child), .btn-group-vertical > .btn-warning:not(:first-child), .btn-group-vertical > .btn-danger:not(:first-child), .btn-group-vertical > .btn-success:not(:first-child), .btn-group-vertical > .btn-secondary:not(:first-child), .btn-group-vertical > .btn-primary:not(:first-child),
+.btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .btn-outline-danger:not(:first-child), .btn-group-vertical > .btn-outline-success:not(:first-child), .btn-group-vertical > .btn-outline-secondary:not(:first-child), .btn-group-vertical > .btn-outline-primary:not(:first-child), .btn-group-vertical > .btn-dark:not(:first-child), .btn-group-vertical > .btn-light:not(:first-child), .btn-group-vertical > .btn-info:not(:first-child), .btn-group-vertical > .btn-warning:not(:first-child), .btn-group-vertical > .btn-danger:not(:first-child), .btn-group-vertical > .btn-success:not(:first-child), .btn-group-vertical > .btn-secondary-lite:not(:first-child), .btn-group-vertical > .btn-secondary:not(:first-child), .btn-group-vertical > .btn-primary:not(:first-child),
 .btn-group-vertical > .btn-group:not(:first-child) {
   margin-top: calc(-1 * var(--bs-border-width));
 }
-.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-outline-danger:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-outline-success:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-outline-secondary:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-outline-primary:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-dark:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-light:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-info:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-warning:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-danger:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-success:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-secondary:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-primary:not(:last-child):not(.dropdown-toggle),
+.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-outline-danger:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-outline-success:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-outline-secondary:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-outline-primary:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-dark:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-light:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-info:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-warning:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-danger:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-success:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-secondary-lite:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-secondary:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-primary:not(:last-child):not(.dropdown-toggle),
 .btn-group-vertical > .btn-group:not(:last-child) > .btn,
 .btn-group-vertical > .btn-group:not(:last-child) > .btn-outline-danger,
 .btn-group-vertical > .btn-group:not(:last-child) > .btn-outline-success,
@@ -4262,12 +4280,13 @@ textarea.form-control-lg {
 .btn-group-vertical > .btn-group:not(:last-child) > .btn-warning,
 .btn-group-vertical > .btn-group:not(:last-child) > .btn-danger,
 .btn-group-vertical > .btn-group:not(:last-child) > .btn-success,
+.btn-group-vertical > .btn-group:not(:last-child) > .btn-secondary-lite,
 .btn-group-vertical > .btn-group:not(:last-child) > .btn-secondary,
 .btn-group-vertical > .btn-group:not(:last-child) > .btn-primary {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-.btn-group-vertical > .btn:nth-child(n+3), .btn-group-vertical > .btn-outline-danger:nth-child(n+3), .btn-group-vertical > .btn-outline-success:nth-child(n+3), .btn-group-vertical > .btn-outline-secondary:nth-child(n+3), .btn-group-vertical > .btn-outline-primary:nth-child(n+3), .btn-group-vertical > .btn-dark:nth-child(n+3), .btn-group-vertical > .btn-light:nth-child(n+3), .btn-group-vertical > .btn-info:nth-child(n+3), .btn-group-vertical > .btn-warning:nth-child(n+3), .btn-group-vertical > .btn-danger:nth-child(n+3), .btn-group-vertical > .btn-success:nth-child(n+3), .btn-group-vertical > .btn-secondary:nth-child(n+3), .btn-group-vertical > .btn-primary:nth-child(n+3),
+.btn-group-vertical > .btn:nth-child(n+3), .btn-group-vertical > .btn-outline-danger:nth-child(n+3), .btn-group-vertical > .btn-outline-success:nth-child(n+3), .btn-group-vertical > .btn-outline-secondary:nth-child(n+3), .btn-group-vertical > .btn-outline-primary:nth-child(n+3), .btn-group-vertical > .btn-dark:nth-child(n+3), .btn-group-vertical > .btn-light:nth-child(n+3), .btn-group-vertical > .btn-info:nth-child(n+3), .btn-group-vertical > .btn-warning:nth-child(n+3), .btn-group-vertical > .btn-danger:nth-child(n+3), .btn-group-vertical > .btn-success:nth-child(n+3), .btn-group-vertical > .btn-secondary-lite:nth-child(n+3), .btn-group-vertical > .btn-secondary:nth-child(n+3), .btn-group-vertical > .btn-primary:nth-child(n+3),
 .btn-group-vertical > :not(.btn-check) + .btn,
 .btn-group-vertical > :not(.btn-check) + .btn-outline-danger,
 .btn-group-vertical > :not(.btn-check) + .btn-outline-success,
@@ -4279,6 +4298,7 @@ textarea.form-control-lg {
 .btn-group-vertical > :not(.btn-check) + .btn-warning,
 .btn-group-vertical > :not(.btn-check) + .btn-danger,
 .btn-group-vertical > :not(.btn-check) + .btn-success,
+.btn-group-vertical > :not(.btn-check) + .btn-secondary-lite,
 .btn-group-vertical > :not(.btn-check) + .btn-secondary,
 .btn-group-vertical > :not(.btn-check) + .btn-primary,
 .btn-group-vertical > .btn-group:not(:first-child) > .btn,
@@ -4292,6 +4312,7 @@ textarea.form-control-lg {
 .btn-group-vertical > .btn-group:not(:first-child) > .btn-warning,
 .btn-group-vertical > .btn-group:not(:first-child) > .btn-danger,
 .btn-group-vertical > .btn-group:not(:first-child) > .btn-success,
+.btn-group-vertical > .btn-group:not(:first-child) > .btn-secondary-lite,
 .btn-group-vertical > .btn-group:not(:first-child) > .btn-secondary,
 .btn-group-vertical > .btn-group:not(:first-child) > .btn-primary {
   border-top-left-radius: 0;
@@ -5508,7 +5529,7 @@ textarea.form-control-lg {
   display: none;
 }
 
-.btn .badge, .btn-outline-danger .badge, .btn-outline-success .badge, .btn-outline-secondary .badge, .btn-outline-primary .badge, .btn-dark .badge, .btn-light .badge, .btn-info .badge, .btn-warning .badge, .btn-danger .badge, .btn-success .badge, .btn-secondary .badge, .btn-primary .badge {
+.btn .badge, .btn-outline-danger .badge, .btn-outline-success .badge, .btn-outline-secondary .badge, .btn-outline-primary .badge, .btn-dark .badge, .btn-light .badge, .btn-info .badge, .btn-warning .badge, .btn-danger .badge, .btn-success .badge, .btn-secondary-lite .badge, .btn-secondary .badge, .btn-primary .badge {
   position: relative;
   top: -1px;
 }
@@ -7613,7 +7634,7 @@ textarea.form-control-lg {
   background-color: currentcolor;
   opacity: 0.5;
 }
-.placeholder.btn::before, .placeholder.btn-outline-danger::before, .placeholder.btn-outline-success::before, .placeholder.btn-outline-secondary::before, .placeholder.btn-outline-primary::before, .placeholder.btn-dark::before, .placeholder.btn-light::before, .placeholder.btn-info::before, .placeholder.btn-warning::before, .placeholder.btn-danger::before, .placeholder.btn-success::before, .placeholder.btn-secondary::before, .placeholder.btn-primary::before {
+.placeholder.btn::before, .placeholder.btn-outline-danger::before, .placeholder.btn-outline-success::before, .placeholder.btn-outline-secondary::before, .placeholder.btn-outline-primary::before, .placeholder.btn-dark::before, .placeholder.btn-light::before, .placeholder.btn-info::before, .placeholder.btn-warning::before, .placeholder.btn-danger::before, .placeholder.btn-success::before, .placeholder.btn-secondary-lite::before, .placeholder.btn-secondary::before, .placeholder.btn-primary::before {
   display: inline-block;
   content: "";
 }
@@ -7708,8 +7729,8 @@ textarea.form-control-lg {
   text-decoration-color: RGBA(var(--bs-secondary-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
 .link-secondary:hover, .link-secondary:focus {
-  color: RGBA(255, 244, 213, var(--bs-link-opacity, 1)) !important;
-  text-decoration-color: RGBA(255, 244, 213, var(--bs-link-underline-opacity, 1)) !important;
+  color: RGBA(237, 215, 120, var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(237, 215, 120, var(--bs-link-underline-opacity, 1)) !important;
 }
 
 .link-danger {
@@ -13285,7 +13306,6 @@ body {
   position: relative;
   margin: 0 auto;
   height: 100%;
-  overflow: hidden;
   font-family: "Roboto", sans-serif;
 }
 
@@ -13594,7 +13614,7 @@ h6, .h6 {
   margin-top: 20px !important;
 }
 
-.btn, .btn-outline-danger, .btn-outline-success, .btn-outline-secondary, .btn-outline-primary, .btn-dark, .btn-light, .btn-info, .btn-warning, .btn-danger, .btn-success, .btn-secondary, .btn-primary {
+.btn, .btn-outline-danger, .btn-outline-success, .btn-outline-secondary, .btn-outline-primary, .btn-dark, .btn-light, .btn-info, .btn-warning, .btn-danger, .btn-success, .btn-secondary-lite, .btn-secondary, .btn-primary {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -13618,23 +13638,23 @@ h6, .h6 {
   position: relative;
   overflow: hidden;
 }
-.btn:hover, .btn-outline-danger:hover, .btn-outline-success:hover, .btn-outline-secondary:hover, .btn-outline-primary:hover, .btn-dark:hover, .btn-light:hover, .btn-info:hover, .btn-warning:hover, .btn-danger:hover, .btn-success:hover, .btn-secondary:hover, .btn-primary:hover {
+.btn:hover, .btn-outline-danger:hover, .btn-outline-success:hover, .btn-outline-secondary:hover, .btn-outline-primary:hover, .btn-dark:hover, .btn-light:hover, .btn-info:hover, .btn-warning:hover, .btn-danger:hover, .btn-success:hover, .btn-secondary-lite:hover, .btn-secondary:hover, .btn-primary:hover {
   -webkit-transform: translateY(-1px);
           transform: translateY(-1px);
   -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
-.btn:active, .btn-outline-danger:active, .btn-outline-success:active, .btn-outline-secondary:active, .btn-outline-primary:active, .btn-dark:active, .btn-light:active, .btn-info:active, .btn-warning:active, .btn-danger:active, .btn-success:active, .btn-secondary:active, .btn-primary:active {
+.btn:active, .btn-outline-danger:active, .btn-outline-success:active, .btn-outline-secondary:active, .btn-outline-primary:active, .btn-dark:active, .btn-light:active, .btn-info:active, .btn-warning:active, .btn-danger:active, .btn-success:active, .btn-secondary-lite:active, .btn-secondary:active, .btn-primary:active {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
-.btn:disabled, .btn-outline-danger:disabled, .btn-outline-success:disabled, .btn-outline-secondary:disabled, .btn-outline-primary:disabled, .btn-dark:disabled, .btn-light:disabled, .btn-info:disabled, .btn-warning:disabled, .btn-danger:disabled, .btn-success:disabled, .btn-secondary:disabled, .btn-primary:disabled {
+.btn:disabled, .btn-outline-danger:disabled, .btn-outline-success:disabled, .btn-outline-secondary:disabled, .btn-outline-primary:disabled, .btn-dark:disabled, .btn-light:disabled, .btn-info:disabled, .btn-warning:disabled, .btn-danger:disabled, .btn-success:disabled, .btn-secondary-lite:disabled, .btn-secondary:disabled, .btn-primary:disabled {
   opacity: 0.6;
   cursor: not-allowed;
   -webkit-transform: none;
           transform: none;
 }
-.btn .icon, .btn-outline-danger .icon, .btn-outline-success .icon, .btn-outline-secondary .icon, .btn-outline-primary .icon, .btn-dark .icon, .btn-light .icon, .btn-info .icon, .btn-warning .icon, .btn-danger .icon, .btn-success .icon, .btn-secondary .icon, .btn-primary .icon {
+.btn .icon, .btn-outline-danger .icon, .btn-outline-success .icon, .btn-outline-secondary .icon, .btn-outline-primary .icon, .btn-dark .icon, .btn-light .icon, .btn-info .icon, .btn-warning .icon, .btn-danger .icon, .btn-success .icon, .btn-secondary-lite .icon, .btn-secondary .icon, .btn-primary .icon {
   display: inline-block;
 }
 
@@ -13659,13 +13679,26 @@ h6, .h6 {
 }
 
 .btn-secondary {
-  background-color: #FFF1CA;
+  background-color: #E9CD56;
   color: #000;
 }
 .btn-secondary:hover {
-  background-color: #ffe497;
+  background-color: #32694A;
+  color: #fff;
 }
 .btn-secondary:active {
+  background-color: #d7b31c;
+}
+
+.btn-secondary-lite {
+  background-color: #FFF1CA;
+  color: #000;
+}
+.btn-secondary-lite:hover {
+  background-color: #ffe497;
+  color: #000;
+}
+.btn-secondary-lite:active {
   background-color: #ffdd7e;
 }
 
@@ -13760,7 +13793,7 @@ h6, .h6 {
   border: 1px solid #fff;
 }
 .btn-outline-secondary:hover {
-  background-color: #FFF1CA;
+  background-color: #E9CD56;
   color: #000;
 }
 
@@ -13784,13 +13817,13 @@ h6, .h6 {
   color: #fff;
 }
 
-.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .btn-primary, .btn-group-sm > .btn-secondary, .btn-group-sm > .btn-success, .btn-group-sm > .btn-danger, .btn-group-sm > .btn-warning, .btn-group-sm > .btn-info, .btn-group-sm > .btn-light, .btn-group-sm > .btn-dark, .btn-group-sm > .btn-outline-primary, .btn-group-sm > .btn-outline-secondary, .btn-group-sm > .btn-outline-success, .btn-group-sm > .btn-outline-danger {
+.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .btn-primary, .btn-group-sm > .btn-secondary, .btn-group-sm > .btn-secondary-lite, .btn-group-sm > .btn-success, .btn-group-sm > .btn-danger, .btn-group-sm > .btn-warning, .btn-group-sm > .btn-info, .btn-group-sm > .btn-light, .btn-group-sm > .btn-dark, .btn-group-sm > .btn-outline-primary, .btn-group-sm > .btn-outline-secondary, .btn-group-sm > .btn-outline-success, .btn-group-sm > .btn-outline-danger {
   padding: 8px 16px;
   font-size: 14px;
   border-radius: 6px;
 }
 
-.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .btn-primary, .btn-group-lg > .btn-secondary, .btn-group-lg > .btn-success, .btn-group-lg > .btn-danger, .btn-group-lg > .btn-warning, .btn-group-lg > .btn-info, .btn-group-lg > .btn-light, .btn-group-lg > .btn-dark, .btn-group-lg > .btn-outline-primary, .btn-group-lg > .btn-outline-secondary, .btn-group-lg > .btn-outline-success, .btn-group-lg > .btn-outline-danger {
+.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .btn-primary, .btn-group-lg > .btn-secondary, .btn-group-lg > .btn-secondary-lite, .btn-group-lg > .btn-success, .btn-group-lg > .btn-danger, .btn-group-lg > .btn-warning, .btn-group-lg > .btn-info, .btn-group-lg > .btn-light, .btn-group-lg > .btn-dark, .btn-group-lg > .btn-outline-primary, .btn-group-lg > .btn-outline-secondary, .btn-group-lg > .btn-outline-success, .btn-group-lg > .btn-outline-danger {
   padding: 16px 32px;
   font-size: 18px;
   border-radius: 10px;
@@ -13853,11 +13886,11 @@ h6, .h6 {
   }
 }
 @media (max-width: 767.98px) {
-  .btn, .btn-primary, .btn-secondary, .btn-success, .btn-danger, .btn-warning, .btn-info, .btn-light, .btn-dark, .btn-outline-primary, .btn-outline-secondary, .btn-outline-success, .btn-outline-danger {
+  .btn, .btn-primary, .btn-secondary, .btn-secondary-lite, .btn-success, .btn-danger, .btn-warning, .btn-info, .btn-light, .btn-dark, .btn-outline-primary, .btn-outline-secondary, .btn-outline-success, .btn-outline-danger {
     padding: 10px 20px;
     font-size: 14px;
   }
-  .btn-lg, .btn-group-lg > .btn, .btn-group-lg > .btn-primary, .btn-group-lg > .btn-secondary, .btn-group-lg > .btn-success, .btn-group-lg > .btn-danger, .btn-group-lg > .btn-warning, .btn-group-lg > .btn-info, .btn-group-lg > .btn-light, .btn-group-lg > .btn-dark, .btn-group-lg > .btn-outline-primary, .btn-group-lg > .btn-outline-secondary, .btn-group-lg > .btn-outline-success, .btn-group-lg > .btn-outline-danger {
+  .btn-lg, .btn-group-lg > .btn, .btn-group-lg > .btn-primary, .btn-group-lg > .btn-secondary, .btn-group-lg > .btn-secondary-lite, .btn-group-lg > .btn-success, .btn-group-lg > .btn-danger, .btn-group-lg > .btn-warning, .btn-group-lg > .btn-info, .btn-group-lg > .btn-light, .btn-group-lg > .btn-dark, .btn-group-lg > .btn-outline-primary, .btn-group-lg > .btn-outline-secondary, .btn-group-lg > .btn-outline-success, .btn-group-lg > .btn-outline-danger {
     padding: 14px 28px;
     font-size: 16px;
   }
@@ -13875,8 +13908,6 @@ h6, .h6 {
   padding: 15px 0;
   z-index: 1049;
   background-color: #fff;
-  -webkit-animation: slideDownHeader 0.8s ease-out;
-          animation: slideDownHeader 0.8s ease-out;
   -webkit-transform-origin: top;
           transform-origin: top;
 }
@@ -14056,8 +14087,6 @@ h6, .h6 {
     font-size: 18px;
     -webkit-transition: all, ease, 0.3s;
     transition: all, ease, 0.3s;
-    -webkit-animation: fadeInUp 0.8s ease-out both;
-            animation: fadeInUp 0.8s ease-out both;
   }
 }
 @media (min-width: 1200px) and (prefers-reduced-motion: reduce) {
@@ -14175,10 +14204,10 @@ h6, .h6 {
   .main-nav .btn-group li {
     padding: 0 10px;
   }
-  .main-nav .btn-group .btn, .main-nav .btn-group .btn-primary, .main-nav .btn-group .btn-secondary, .main-nav .btn-group .btn-success, .main-nav .btn-group .btn-danger, .main-nav .btn-group .btn-warning, .main-nav .btn-group .btn-info, .main-nav .btn-group .btn-light, .main-nav .btn-group .btn-dark, .main-nav .btn-group .btn-outline-primary, .main-nav .btn-group .btn-outline-secondary, .main-nav .btn-group .btn-outline-success, .main-nav .btn-group .btn-outline-danger {
+  .main-nav .btn-group .btn, .main-nav .btn-group .btn-primary, .main-nav .btn-group .btn-secondary, .main-nav .btn-group .btn-secondary-lite, .main-nav .btn-group .btn-success, .main-nav .btn-group .btn-danger, .main-nav .btn-group .btn-warning, .main-nav .btn-group .btn-info, .main-nav .btn-group .btn-light, .main-nav .btn-group .btn-dark, .main-nav .btn-group .btn-outline-primary, .main-nav .btn-group .btn-outline-secondary, .main-nav .btn-group .btn-outline-success, .main-nav .btn-group .btn-outline-danger {
     width: 100%;
   }
-  .main-nav .btn-group .btn svg, .main-nav .btn-group .btn-primary svg, .main-nav .btn-group .btn-secondary svg, .main-nav .btn-group .btn-success svg, .main-nav .btn-group .btn-danger svg, .main-nav .btn-group .btn-warning svg, .main-nav .btn-group .btn-info svg, .main-nav .btn-group .btn-light svg, .main-nav .btn-group .btn-dark svg, .main-nav .btn-group .btn-outline-primary svg, .main-nav .btn-group .btn-outline-secondary svg, .main-nav .btn-group .btn-outline-success svg, .main-nav .btn-group .btn-outline-danger svg {
+  .main-nav .btn-group .btn svg, .main-nav .btn-group .btn-primary svg, .main-nav .btn-group .btn-secondary svg, .main-nav .btn-group .btn-secondary-lite svg, .main-nav .btn-group .btn-success svg, .main-nav .btn-group .btn-danger svg, .main-nav .btn-group .btn-warning svg, .main-nav .btn-group .btn-info svg, .main-nav .btn-group .btn-light svg, .main-nav .btn-group .btn-dark svg, .main-nav .btn-group .btn-outline-primary svg, .main-nav .btn-group .btn-outline-secondary svg, .main-nav .btn-group .btn-outline-success svg, .main-nav .btn-group .btn-outline-danger svg {
     margin-right: 10px;
   }
   .mob-btn {
@@ -14253,6 +14282,9 @@ h6, .h6 {
     color: #1D1D1D;
     border-bottom: 1px solid #F0F2F4;
   }
+  .main-nav ul li a.active {
+    color: #32694A;
+  }
   .main-nav ul li.submenu i {
     position: absolute;
     width: 46px;
@@ -14318,7 +14350,7 @@ h6, .h6 {
   .main-nav .btn-group li + li {
     margin-top: 20px;
   }
-  .main-nav .btn-group .btn, .main-nav .btn-group .btn-primary, .main-nav .btn-group .btn-secondary, .main-nav .btn-group .btn-success, .main-nav .btn-group .btn-danger, .main-nav .btn-group .btn-warning, .main-nav .btn-group .btn-info, .main-nav .btn-group .btn-light, .main-nav .btn-group .btn-dark, .main-nav .btn-group .btn-outline-primary, .main-nav .btn-group .btn-outline-secondary, .main-nav .btn-group .btn-outline-success, .main-nav .btn-group .btn-outline-danger {
+  .main-nav .btn-group .btn, .main-nav .btn-group .btn-primary, .main-nav .btn-group .btn-secondary, .main-nav .btn-group .btn-secondary-lite, .main-nav .btn-group .btn-success, .main-nav .btn-group .btn-danger, .main-nav .btn-group .btn-warning, .main-nav .btn-group .btn-info, .main-nav .btn-group .btn-light, .main-nav .btn-group .btn-dark, .main-nav .btn-group .btn-outline-primary, .main-nav .btn-group .btn-outline-secondary, .main-nav .btn-group .btn-outline-success, .main-nav .btn-group .btn-outline-danger {
     width: 100%;
   }
   .show-menu .main-nav {
@@ -14481,9 +14513,15 @@ body.show-menu .mob-btn span + span + span {
 @media (max-width: 767px) {
   .brand-info .brand-description {
     font-size: 13px;
+    margin-bottom: 20px;
   }
 }
 
+@media (max-width: 767px) {
+  .social-section {
+    margin-top: 20px;
+  }
+}
 .social-section h4, .social-section .h4 {
   color: #fff;
   font-size: 16px;
@@ -14665,6 +14703,105 @@ body.show-menu .mob-btn span + span + span {
   .footer-bottom .copyright {
     font-size: 13px;
   }
+}
+
+.connect-company-section {
+  display: none;
+}
+@media (max-width: 767px) {
+  .connect-company-section {
+    display: block;
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid #333;
+  }
+}
+.connect-company-section .connect-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.connect-company-section .connect-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+.connect-company-section .connect-form .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+.connect-company-section .connect-form .form-group label {
+  color: #888;
+  font-size: 14px;
+  font-weight: 500;
+}
+.connect-company-section .connect-form .form-group input, .connect-company-section .connect-form .form-group textarea {
+  padding: 12px 15px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-size: 14px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.connect-company-section .connect-form .form-group input:focus, .connect-company-section .connect-form .form-group textarea:focus {
+  outline: none;
+  border-color: #32694A;
+  -webkit-box-shadow: 0 0 0 2px rgba(83, 179, 44, 0.1);
+          box-shadow: 0 0 0 2px rgba(83, 179, 44, 0.1);
+}
+.connect-company-section .connect-form .form-group input::-webkit-input-placeholder, .connect-company-section .connect-form .form-group textarea::-webkit-input-placeholder {
+  color: #666;
+}
+.connect-company-section .connect-form .form-group input::-moz-placeholder, .connect-company-section .connect-form .form-group textarea::-moz-placeholder {
+  color: #666;
+}
+.connect-company-section .connect-form .form-group input:-ms-input-placeholder, .connect-company-section .connect-form .form-group textarea:-ms-input-placeholder {
+  color: #666;
+}
+.connect-company-section .connect-form .form-group input::-ms-input-placeholder, .connect-company-section .connect-form .form-group textarea::-ms-input-placeholder {
+  color: #666;
+}
+.connect-company-section .connect-form .form-group input::placeholder, .connect-company-section .connect-form .form-group textarea::placeholder {
+  color: #666;
+}
+.connect-company-section .connect-form .form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+.connect-company-section .connect-form .submit-btn {
+  background-color: #32694A;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.connect-company-section .connect-form .submit-btn:hover {
+  background-color: #224632;
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
 }
 
 @media (max-width: 767px) {
