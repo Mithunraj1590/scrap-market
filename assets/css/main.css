@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -13332,7 +13333,7 @@ select.default:focus, select.default:active {
 }
 
 h1, .h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Urbanist", sans-serif;
   color: #1D1D1D;
   font-weight: 400;
   line-height: 1.2;
@@ -13356,7 +13357,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Urbanist", sans-serif;
   color: #1D1D1D;
   font-weight: 400;
   line-height: 1.2;
@@ -13380,7 +13381,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Urbanist", sans-serif;
   color: #1D1D1D;
   font-weight: 400;
   line-height: 1.2;
@@ -13399,7 +13400,7 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Urbanist", sans-serif;
   color: #1D1D1D;
   font-weight: 400;
   line-height: 1.2;
@@ -13418,7 +13419,7 @@ h4, .h4 {
 }
 
 h5, .h5 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Urbanist", sans-serif;
   color: #1D1D1D;
   font-weight: 400;
   line-height: 1.2;
@@ -13437,7 +13438,7 @@ h5, .h5 {
 }
 
 h6, .h6 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Urbanist", sans-serif;
   color: #1D1D1D;
   font-weight: 400;
   line-height: 1.2;

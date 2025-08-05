@@ -64,7 +64,7 @@
 
 // Heading Mixin
 @mixin heading($level) {
-  font-family: $h-font;
+  font-family: "Urbanist", sans-serif;
   color: $h-color;
   font-weight: 400;
   line-height: 1.2;
