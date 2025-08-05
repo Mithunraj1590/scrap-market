@@ -40,7 +40,7 @@ const swiper = new Swiper('.swiper', {
 const blogSwiper = new Swiper('.blog-swiper', {
     slidesPerView: 3,
     spaceBetween: 30,
-    loop: true,
+
     
     navigation: {
         nextEl: '.blog-nav-next',
