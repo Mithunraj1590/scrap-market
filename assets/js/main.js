@@ -151,6 +151,68 @@ const blogSwiper = new Swiper('.blog-swiper', {
     }
 });
 
+// Testimonial Swiper
+const testimonialSwiper = new Swiper('.testimonial-swiper', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: '.testimonial-nav-next',
+        prevEl: '.testimonial-nav-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            navigation: {
+                enabled: false
+            },
+            pagination: {
+                enabled: true
+            }
+        },
+        768: {
+            slidesPerView: 1,
+            spaceBetween: 25,
+            navigation: {
+                enabled: false
+            },
+            pagination: {
+                enabled: true
+            }
+        },
+        992: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            navigation: {
+                enabled: true
+            },
+            pagination: {
+                enabled: true
+            }
+        },
+        1200: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            navigation: {
+                enabled: true
+            },
+            pagination: {
+                enabled: true
+            }
+        }
+    }
+});
+
 // Footer accordion functionality for mobile
 document.addEventListener('DOMContentLoaded', function() {
     const sectionTitles = document.querySelectorAll('.footer-section .section-title');
