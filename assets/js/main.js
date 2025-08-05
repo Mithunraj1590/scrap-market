@@ -33,6 +33,64 @@ const swiper = new Swiper('.swiper', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+
+    breakpoints: {
+        320: {
+            slidesPerView: 2.4,
+            spaceBetween: 10,
+            navigation: {
+                enabled: false
+            },
+            pagination: {
+                enabled: true
+            }
+        },
+        480: {
+            slidesPerView: 3.2,
+            spaceBetween: 12,
+            navigation: {
+                enabled: false
+            },
+            pagination: {
+                enabled: true
+            }
+        },
+        768: {
+            slidesPerView: 4.2,
+            spaceBetween: 14,
+            navigation: {
+                enabled: false
+            },
+            pagination: {
+                enabled: true
+            }
+        },
+        992: {
+            slidesPerView: 5.2,
+            spaceBetween: 16,
+            navigation: {
+                enabled: true
+            },
+            pagination: {
+                enabled: false
+            }
+        },
+        1200: {
+            slidesPerView: 6,
+            spaceBetween: 16,
+            navigation: {
+                enabled: true
+            },
+            pagination: {
+                enabled: false
+            }
+        }
+    }
   
   });
 
@@ -40,25 +98,55 @@ const swiper = new Swiper('.swiper', {
 const blogSwiper = new Swiper('.blog-swiper', {
     slidesPerView: 3,
     spaceBetween: 30,
-
-    
     navigation: {
         nextEl: '.blog-nav-next',
         prevEl: '.blog-nav-prev',
     },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
     
     breakpoints: {
         320: {
-            slidesPerView: 1,
-            spaceBetween: 20
+            slidesPerView: 1.1,
+            spaceBetween: 20,
+            navigation: {
+                enabled: false
+            },
+            pagination: {
+                enabled: true
+            }
         },
         768: {
+            slidesPerView: 1.2,
+            spaceBetween: 25,
+            navigation: {
+                enabled: false
+            },
+            pagination: {
+                enabled: true
+            }
+        },
+        992: {
             slidesPerView: 2,
-            spaceBetween: 25
+            spaceBetween: 25,
+            navigation: {
+                enabled: true
+            },
+            pagination: {
+                enabled: true
+            }
         },
         1200: {
             slidesPerView: 3,
-            spaceBetween: 30
+            spaceBetween: 30,
+            navigation: {
+                enabled: true
+            },
+            pagination: {
+                enabled: true
+            }
         }
     }
 });

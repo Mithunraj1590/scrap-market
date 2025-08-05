@@ -11,7 +11,7 @@
   margin: 0 auto;
   left: 0;
   top: 0;
-  height: size(100);
+  padding: 15px 0;
   z-index: 1049;
   background-color: #fff;
 }
@@ -209,13 +209,16 @@
     }
 
     .btn-group {
+      
       li{
         padding: 0 10px;
       }
       .btn {
+        width: 100%;
         svg {
           margin-right: 10px;
         }
+       
       }
     }
   }
@@ -229,18 +232,19 @@
 
   /*==== Menu ====*/
   .main-nav {
-    display: block;
+    display: flex;
+    flex-direction: column;
     position: fixed;
     max-width: 100%;
-    top: size(70);
-    padding: size(45);
+    top: 83px;
+    padding: size(20);
     padding-top: size(35);
     right: 0;
-    height: 100%;
+    height: calc(100vh - 83px);
     @include transition(all, ease-in-out, 0.3s);
     z-index: 3;
     width: 100%;
-    height: 100%;
+   
     overflow: auto;
     opacity: 0;
     -webkit-transform: scaleY(0);
@@ -362,6 +366,19 @@
         }
       }
     }
+    .btn-group {
+      margin-top: auto;
+      li{
+        &+li{
+          margin-top: 20px;
+        }
+      }
+      .btn {
+        width: 100%;
+       
+       
+      }
+    }
   }
 
   .show-menu {
@@ -442,6 +459,7 @@ body {
   &.show-menu {
     overflow: hidden;
     background: $white;
+    height: 100vh;
 
     .mob-btn {
       // opacity: 0;

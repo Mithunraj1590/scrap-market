@@ -9,13 +9,13 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: px-rem(8);
+  gap:8px;
   padding: 12px 32px;
   border: none;
   border-radius: 30px;
   font-family: $font-family;
   font-weight: 500;
-  @include px-rem(16, "font-size");
+  font-size: size(18);
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -233,25 +233,25 @@
 
 // Button sizes
 .btn-sm {
-  padding: px-rem(8) px-rem(16);
-  @include px-rem(14, "font-size");
-  border-radius: px-rem(6);
+  padding: size(8) size(16);
+  font-size: size(14);
+  border-radius: size(6);
 
   
 }
 
 .btn-lg {
-  padding: px-rem(16) px-rem(32);
-  @include px-rem(18, "font-size");
-  border-radius: px-rem(10);
+  padding: size(16) size(32);
+  font-size: size(18);
+  border-radius: size(10);
 
   
 }
 
 .btn-xl {
-  padding: px-rem(20) px-rem(40);
-  @include px-rem(20, "font-size");
-  border-radius: px-rem(12);
+  padding: size(20) size(40);
+ font-size: size(20);
+  border-radius: size(12);
 
  
 }
@@ -294,17 +294,17 @@
 // Responsive button styles
 @media (max-width: 767.98px) {
   .btn {
-    padding: px-rem(10) px-rem(20);
-    @include px-rem(14, "font-size");
+    padding: size(10) size(20);
+    font-size: size(14);
   }
 
   .btn-lg {
-    padding: px-rem(14) px-rem(28);
-    @include px-rem(16, "font-size");
+    padding: size(14) size(28);
+    font-size: size(16);
   }
 
   .btn-xl {
-    padding: px-rem(16) px-rem(32);
-    @include px-rem(18, "font-size");
+    padding: size(16) size(32);
+    font-size: size(18);
   }
 }
