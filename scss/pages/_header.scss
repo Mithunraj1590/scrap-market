@@ -14,6 +14,20 @@
   padding: 15px 0;
   z-index: 1049;
   background-color: #fff;
+  animation: slideDownHeader 0.8s ease-out;
+  transform-origin: top;
+}
+
+// Header animation
+@keyframes slideDownHeader {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .header-right {
@@ -22,6 +36,7 @@
 
 .logo {
   width: 143px;
+  // animation: fadeInLeft 1s ease-out 0.2s both;
 
   a {
     display: inline-block;
@@ -30,6 +45,30 @@
     figure {
       @include aspectRatio(64, 143);
     }
+  }
+}
+
+// Logo animation
+@keyframes fadeInLeft {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+// Navigation items animation
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -109,6 +148,7 @@
           font-weight: 400;
           font-size: 18px;
           @include transition(all, ease, 0.3s);
+          animation: fadeInUp 0.8s ease-out both;
 
           &.active {
             color: $primary-color;

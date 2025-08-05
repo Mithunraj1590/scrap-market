@@ -5,7 +5,7 @@
 .home-banner {
     height: calc(100vh - 100px);
     position: relative;
-    overflow: hidden;
+    overflow: hidden!important;
 
     @include max(1200) {
         height: calc(100vh - 80px);
@@ -32,6 +32,7 @@
             height: 100%;
             object-fit: cover;
             object-position: center;
+            animation: scaleInBanner 2s ease-in-out;
         }
 
         &::before {
@@ -63,6 +64,7 @@
             line-height: 80px;
             margin-bottom: 15px;
             font-weight: $font-bold;
+            animation: slideInLeft 1s ease-out 0.3s both;
 
             @include max(1200) {
                 max-width: 75%;
@@ -95,6 +97,7 @@
             font-weight: 300;
             max-width: 60%;
             line-height: 1.4;
+            animation: slideInLeft 1s ease-out 0.5s both;
 
             @include max(1200) {
                 font-size: size(22);
@@ -122,6 +125,7 @@
             display: flex;
             gap: 15px;
             flex-wrap: wrap;
+            animation: slideInUp 1s ease-out 0.7s both;
 
             @include max(1200) {
                 margin-top: 35px;
@@ -1652,5 +1656,37 @@
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+// Banner animations
+@keyframes scaleInBanner {
+    0% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
