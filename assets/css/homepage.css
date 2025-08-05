@@ -1436,7 +1436,6 @@
 
 .stats-section {
   padding: 80px 0;
-  background-color: #f8f9fa;
   position: relative;
   overflow: hidden;
 }
@@ -1451,11 +1450,6 @@
   }
 }
 @media (max-width: 767px) {
-  .stats-section {
-    padding: 40px 0;
-  }
-}
-@media (max-width: 480px) {
   .stats-section {
     padding: 50px 0;
   }

@@ -14117,13 +14117,14 @@ h6, .h6 {
     max-width: 100%;
     top: 83px;
     padding: 20px;
-    padding-top: 35px;
+    padding-top: 20px;
     right: 0;
     height: calc(100vh - 83px);
     -webkit-transition: all, ease-in-out, 0.3s;
     transition: all, ease-in-out, 0.3s;
     z-index: 3;
     width: 100%;
+    padding-bottom: 70px;
     overflow: auto;
     opacity: 0;
     -webkit-transform: scaleY(0);

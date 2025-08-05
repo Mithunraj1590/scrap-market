@@ -238,12 +238,13 @@
     max-width: 100%;
     top: 83px;
     padding: size(20);
-    padding-top: size(35);
+    padding-top: size(20);
     right: 0;
     height: calc(100vh - 83px);
     @include transition(all, ease-in-out, 0.3s);
     z-index: 3;
     width: 100%;
+    padding-bottom: 70px;
    
     overflow: auto;
     opacity: 0;
