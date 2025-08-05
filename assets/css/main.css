@@ -14601,6 +14601,9 @@ body.show-menu .mob-btn span + span + span {
 .footer-section .footer-links li a:hover {
   color: #fff;
 }
+.footer-section .footer-links li a.active {
+  color: #fff;
+}
 
 .contact-info {
   display: -webkit-box;
@@ -14636,13 +14639,14 @@ body.show-menu .mob-btn span + span + span {
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
-.contact-info .contact-item span {
+.contact-info .contact-item a {
   color: #fff;
   font-size: 14px;
   line-height: 1.5;
+  text-decoration: none;
 }
 @media (max-width: 767px) {
-  .contact-info .contact-item span {
+  .contact-info .contact-item a {
     font-size: 13px;
   }
 }

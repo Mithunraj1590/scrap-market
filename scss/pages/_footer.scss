@@ -169,6 +169,9 @@
                 &:hover {
                     color: $white;
                 }
+                &.active{
+                    color: $white;
+                }
             }
         }
     }
@@ -199,10 +202,11 @@
             flex-shrink: 0;
         }
         
-        span {
+        a {
             color: $white;
             font-size: 14px;
             line-height: 1.5;
+            text-decoration: none;
             
             @media (max-width: 767px) {
                 font-size: 13px;
