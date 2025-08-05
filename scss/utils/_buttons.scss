@@ -1,0 +1,310 @@
+// =============== BUTTON STYLES ===============
+
+// Import variables and mixins
+@import 'variables';
+@import '../mixins/mixins';
+
+// Base button styles
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: px-rem(8);
+  padding: 12px 32px;
+  border: none;
+  border-radius: 30px;
+  font-family: $font-family;
+  font-weight: 500;
+  @include px-rem(16, "font-size");
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+  }
+
+  // Icon styles
+  .icon {
+  
+    display: inline-block;
+  }
+}
+
+// Primary button
+.btn-primary {
+  @extend .btn;
+  background-color: $primary-color !important;
+  color: $white !important;
+  border: 1px solid $primary-color !important;
+
+  &:hover {
+    background-color: darken($primary-color, 10%) !important;
+    border-color: darken($primary-color, 10%) !important;
+  }
+
+  &:active {
+    background-color: darken($primary-color, 15%) !important;
+    border-color: darken($primary-color, 15%) !important;
+  }
+
+  &:focus {
+    background-color: $primary-color !important;
+    border-color: $primary-color !important;
+    box-shadow: 0 0 0 0.2rem rgba($primary-color, 0.25) !important;
+  }
+}
+
+// Secondary button
+.btn-secondary {
+  @extend .btn;
+  background-color: $secondary-color;
+  color: $black;
+
+  &:hover {
+    background-color: darken($secondary-color, 10%);
+  }
+
+  &:active {
+    background-color: darken($secondary-color, 15%);
+  }
+}
+
+// Success button
+.btn-success {
+  @extend .btn;
+  background-color: #28a745;
+  color: $white;
+
+  &:hover {
+    background-color: darken(#28a745, 10%);
+  }
+
+  &:active {
+    background-color: darken(#28a745, 15%);
+  }
+}
+
+// Danger button
+.btn-danger {
+  @extend .btn;
+  background-color: $danger;
+  color: $white;
+
+  &:hover {
+    background-color: darken($danger, 10%);
+  }
+
+  &:active {
+    background-color: darken($danger, 15%);
+  }
+}
+
+// Warning button
+.btn-warning {
+  @extend .btn;
+  background-color: #ffc107;
+  color: $black;
+
+  &:hover {
+    background-color: darken(#ffc107, 10%);
+  }
+
+  &:active {
+    background-color: darken(#ffc107, 15%);
+  }
+}
+
+// Info button
+.btn-info {
+  @extend .btn;
+  background-color: #17a2b8;
+  color: $white;
+
+  &:hover {
+    background-color: darken(#17a2b8, 10%);
+  }
+
+  &:active {
+    background-color: darken(#17a2b8, 15%);
+  }
+}
+
+// Light button
+.btn-light {
+  @extend .btn;
+  background-color: #f8f9fa !important;
+  color: $black !important;
+  border: 1px solid #dee2e6 !important;
+
+  &:hover {
+    background-color: darken(#f8f9fa, 10%) !important;
+    border-color: darken(#dee2e6, 10%) !important;
+  }
+
+  &:active {
+    background-color: darken(#f8f9fa, 15%) !important;
+    border-color: darken(#dee2e6, 15%) !important;
+  }
+
+  &:focus {
+    background-color: #f8f9fa !important;
+    border-color: #dee2e6 !important;
+    box-shadow: 0 0 0 0.2rem rgba(#dee2e6, 0.25) !important;
+  }
+}
+
+// Dark button
+.btn-dark {
+  @extend .btn;
+  background-color: $dark-bg;
+  color: $white;
+
+  &:hover {
+    background-color: lighten($dark-bg, 10%);
+  }
+
+  &:active {
+    background-color: lighten($dark-bg, 15%);
+  }
+}
+
+// Outline variants
+.btn-outline-primary {
+  @extend .btn;
+  background-color: transparent;
+  color: $primary-color;
+  border: 1px solid $primary-color;
+
+  &:hover {
+    background-color: $primary-color;
+    color: $white;
+  }
+}
+
+.btn-outline-secondary {
+  @extend .btn;
+  background-color: transparent;
+  color: $white;
+  border: 1px solid $white;
+
+  &:hover {
+    background-color: $secondary-color;
+    color: $black;
+  }
+}
+
+.btn-outline-success {
+  @extend .btn;
+  background-color: transparent;
+  color: #28a745;
+  border: 2px solid #28a745;
+
+  &:hover {
+    background-color: #28a745;
+    color: $white;
+  }
+}
+
+.btn-outline-danger {
+  @extend .btn;
+  background-color: transparent;
+  color: $danger;
+  border: 2px solid $danger;
+
+  &:hover {
+    background-color: $danger;
+    color: $white;
+  }
+}
+
+// Button sizes
+.btn-sm {
+  padding: px-rem(8) px-rem(16);
+  @include px-rem(14, "font-size");
+  border-radius: px-rem(6);
+
+  
+}
+
+.btn-lg {
+  padding: px-rem(16) px-rem(32);
+  @include px-rem(18, "font-size");
+  border-radius: px-rem(10);
+
+  
+}
+
+.btn-xl {
+  padding: px-rem(20) px-rem(40);
+  @include px-rem(20, "font-size");
+  border-radius: px-rem(12);
+
+ 
+}
+
+// Full width button
+.btn-block {
+  width: 100%;
+  justify-content: center;
+}
+
+// Rounded button
+.btn-rounded {
+  border-radius: px-rem(50);
+}
+
+// Button with loading state
+.btn-loading {
+  position: relative;
+  color: transparent !important;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+    border: 2px solid transparent;
+    border-top: 2px solid currentColor;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+}
+
+@keyframes spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+// Responsive button styles
+@media (max-width: 767.98px) {
+  .btn {
+    padding: px-rem(10) px-rem(20);
+    @include px-rem(14, "font-size");
+  }
+
+  .btn-lg {
+    padding: px-rem(14) px-rem(28);
+    @include px-rem(16, "font-size");
+  }
+
+  .btn-xl {
+    padding: px-rem(16) px-rem(32);
+    @include px-rem(18, "font-size");
+  }
+}

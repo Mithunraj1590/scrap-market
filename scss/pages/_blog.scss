@@ -1,0 +1,297 @@
+@import '../utils/variables';
+@import '../mixins/mixins';
+
+// Blog Section Styles
+.blog-section {
+    background-color: #1a1a1a;
+    padding: 80px 0;
+    position: relative;
+    
+    @include max(991) {
+        padding: 60px 0;
+    }
+    
+    @include max(767) {
+        padding: 40px 0;
+    }
+}
+
+// Section Header
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+    
+    @include max(767) {
+        margin-bottom: 40px;
+    }
+    
+    .title {
+        color: $white;
+        margin-bottom: 15px;
+    }
+    
+    .subtitle {
+        @include paragraph(18);
+        color: #888;
+        margin: 0;
+    }
+}
+
+// Blog Swiper Container
+.blog-swiper {
+    position: relative;
+    padding: 0 50px;
+    
+    @include max(767) {
+        padding: 0 30px;
+    }
+    
+    @include max(480) {
+        padding: 0 20px;
+    }
+}
+
+// Blog Card Styles
+.blog-card {
+    background: $white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    }
+}
+
+// Card Image
+.card-image {
+    position: relative;
+    overflow: hidden;
+    
+    figure {
+        @include aspectRatio(200, 350);
+        margin: 0;
+        
+        img {
+            transition: transform 0.3s ease;
+        }
+    }
+    
+    .blog-card:hover & {
+        figure img {
+            transform: scale(1.05);
+        }
+    }
+}
+
+// Card Content
+.card-content {
+    padding: 25px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    
+    @include max(767) {
+        padding: 20px;
+    }
+    
+    @include max(480) {
+        padding: 15px;
+    }
+}
+
+// Card Title
+.card-title {
+    @include title(30);
+    color: $text-color;
+    line-height: 1.3;
+    margin-bottom: 15px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    @include max(767) {
+        @include title(24);
+    }
+    
+    @include max(480) {
+        @include title(20);
+    }
+}
+
+// Card Meta
+.card-meta {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #666;
+    
+    @include max(480) {
+        flex-direction: column;
+        gap: 5px;
+        font-size: 13px;
+    }
+    
+    .date,
+    .author {
+        position: relative;
+        
+        &:not(:last-child)::after {
+            content: '•';
+            position: absolute;
+            right: -12px;
+            color: #666;
+            
+            @include max(480) {
+                display: none;
+            }
+        }
+    }
+}
+
+// Card Excerpt
+.card-excerpt {
+    @include paragraph(16);
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    @include max(767) {
+        @include paragraph(14);
+        -webkit-line-clamp: 2;
+    }
+    
+    @include max(480) {
+        @include paragraph(13);
+        margin-bottom: 15px;
+    }
+}
+
+// Read More Link
+.read-more {
+    color: $primary-color;
+    text-decoration: none;
+    font-weight: $font-medium;
+    font-size: 14px;
+    transition: color 0.3s ease;
+    align-self: flex-start;
+    
+    &:hover {
+        color: darken($primary-color, 10%);
+    }
+    
+    @include max(480) {
+        font-size: 13px;
+    }
+}
+
+// Swiper Navigation
+.blog-nav-next,
+.blog-nav-prev {
+    width: 50px;
+    height: 50px;
+    background-color: $primary-color;
+    border-radius: 50%;
+    color: $white;
+    transition: all 0.3s ease;
+    
+    &::after {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    &:hover {
+        background-color: darken($primary-color, 10%);
+        transform: scale(1.1);
+    }
+    
+    @include max(767) {
+        width: 40px;
+        height: 40px;
+        
+        &::after {
+            font-size: 16px;
+        }
+    }
+    
+    @include max(480) {
+        width: 35px;
+        height: 35px;
+        
+        &::after {
+            font-size: 14px;
+        }
+    }
+}
+
+// Swiper Pagination (if needed)
+.blog-swiper {
+    .swiper-pagination {
+        position: relative;
+        margin-top: 30px;
+        
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            background-color: #ddd;
+            opacity: 1;
+            transition: all 0.3s ease;
+            
+            &.swiper-pagination-bullet-active {
+                background-color: $primary-color;
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+// Responsive Swiper Configuration
+@include max(1200) {
+    .blog-swiper {
+        .swiper-slide {
+            width: calc(33.333% - 20px);
+        }
+    }
+}
+
+@include max(991) {
+    .blog-swiper {
+        .swiper-slide {
+            width: calc(50% - 15px);
+        }
+    }
+}
+
+@include max(767) {
+    .blog-swiper {
+        .swiper-slide {
+            width: calc(100% - 10px);
+        }
+    }
+}
+
+// Custom Swiper Styles
+.blog-swiper {
+    .swiper-wrapper {
+        align-items: stretch;
+    }
+    
+    .swiper-slide {
+        height: auto;
+        display: flex;
+    }
+} 

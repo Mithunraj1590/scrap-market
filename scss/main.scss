@@ -1,0 +1,15 @@
+@import 'utils/variables';
+@import 'mixins/root-mixins';
+
+// bootstrap
+@import 'bootstrap/bootstrap';
+// Resets
+@import 'utils/resets';
+
+// Utils
+@import 'utils/buttons';
+
+// Pages
+@import 'pages/header';
+@import 'pages/blog';
+@import 'pages/footer';

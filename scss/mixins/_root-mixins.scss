@@ -1,0 +1,257 @@
+// =============== MIXINS ===============
+
+// Import variables
+@import '../utils/variables';
+
+
+
+// Responsive Container Mixin
+@mixin responsive-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+  
+  @each $breakpoint, $width in $container-max-widths {
+    @if $breakpoint == sm {
+      @media (min-width: map-get($grid-breakpoints, sm)) {
+        max-width: $width;
+        padding: 0 20px;
+      }
+    } @else if $breakpoint == md {
+      @media (min-width: map-get($grid-breakpoints, md)) {
+        max-width: $width;
+        padding: 0 25px;
+      }
+    } @else if $breakpoint == lg {
+      @media (min-width: map-get($grid-breakpoints, lg)) {
+        max-width: $width;
+        padding: 0 30px;
+      }
+    } @else if $breakpoint == xl {
+      @media (min-width: map-get($grid-breakpoints, xl)) {
+        max-width: $width;
+        padding: 0 35px;
+      }
+    } @else if $breakpoint == xxl {
+      @media (min-width: map-get($grid-breakpoints, xxl)) {
+        max-width: $width;
+        padding: 0 40px;
+      }
+    }
+  }
+}
+
+// Responsive Font Size Mixin
+@mixin responsive-font-size($sizes) {
+  // Base size (null key)
+  @if map-has-key($sizes, null) {
+    font-size: #{map-get($sizes, null)}px;
+  }
+
+  // Loop through other breakpoints
+  @each $breakpoint, $size in $sizes {
+    @if $breakpoint != null {
+      @media (min-width: #{$breakpoint}px) {
+        font-size: #{$size}px;
+      }
+    }
+  }
+}
+
+
+
+
+// Heading Mixin
+@mixin heading($level) {
+  font-family: $h-font;
+  color: $h-color;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+
+  @if map-has-key($h-sizes, $level) {
+    @include responsive-font-size(map-get($h-sizes, $level));
+  } @else {
+    @warn "Heading level #{$level} not found in \$h-sizes map.";
+  }
+}
+
+// Title Mixin
+@mixin title($size) {
+  font-family: $h-font;
+  color: $title-color;
+  font-weight: $font-weight-title;
+  line-height: 1.2;
+  margin: 0;
+  
+  @if map-has-key($ttl-sizes, $size) {
+    @include responsive-font-size(map-get($ttl-sizes, $size));
+  }
+}
+
+// Paragraph Mixin
+@mixin paragraph($size) {
+  font-family: $font-family;
+  color: $text-color;
+  font-weight: $font-regular;
+  line-height: 1.6;
+  margin: 0;
+  
+  @if map-has-key($p-sizes, $size) {
+    @include responsive-font-size(map-get($p-sizes, $size));
+  }
+}
+
+// Responsive Breakpoint Mixin
+@mixin respond-to($breakpoint) {
+  @if map-has-key($grid-breakpoints, $breakpoint) {
+    @media (min-width: map-get($grid-breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "Unknown breakpoint: #{$breakpoint}";
+  }
+}
+
+// Flex Center Mixin
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Flex Between Mixin
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// Grid Mixin
+@mixin grid($columns: 1, $gap: 20px) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: $gap;
+}
+
+// Button Mixin
+@mixin button($bg-color: $primary, $text-color: $white, $padding: 12px 24px) {
+  background-color: $bg-color;
+  color: $text-color;
+  border: none;
+  padding: $padding;
+  border-radius: 5px;
+  font-family: $font-family;
+  font-weight: $font-medium;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  
+  &:hover {
+    background-color: darken($bg-color, 10%);
+    transform: translateY(-2px);
+  }
+}
+
+// Card Mixin
+@mixin card($padding: 20px, $border-radius: 10px, $shadow: 0 4px 6px rgba(0, 0, 0, 0.1)) {
+  background: $white;
+  padding: $padding;
+  border-radius: $border-radius;
+  box-shadow: $shadow;
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+// Section Mixin
+@mixin section($padding: $spacing 0) {
+  padding: $padding;
+  
+  .container {
+    @include responsive-container;
+  }
+}
+
+// Text Truncate Mixin
+@mixin text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// Multi-line Text Truncate Mixin
+@mixin text-truncate-multiline($lines: 2) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// Hover Effect Mixin
+@mixin hover-effect($scale: 1.05, $transition: 0.3s ease) {
+  transition: transform $transition;
+  
+  &:hover {
+    transform: scale($scale);
+  }
+}
+
+// Focus Mixin
+@mixin focus-style($color: $primary) {
+  &:focus {
+    outline: 2px solid $color;
+    outline-offset: 2px;
+  }
+}
+
+// Accessibility Mixin
+@mixin sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+// Animation Mixin
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+// Animation Mixin
+@mixin animate($name, $duration: 1s, $timing: ease, $delay: 0s, $iteration: 1) {
+  animation: $name $duration $timing $delay $iteration;
+}
+
+// Gradient Mixin
+@mixin gradient($start-color, $end-color, $direction: to right) {
+  background: linear-gradient($direction, $start-color, $end-color);
+}
+
+// Border Radius Mixin
+@mixin border-radius($radius: 5px) {
+  border-radius: $radius;
+}
+
+// Box Shadow Mixin
+@mixin box-shadow($shadow: 0 2px 4px rgba(0, 0, 0, 0.1)) {
+  box-shadow: $shadow;
+}
+
+// Z-Index Mixin
+@mixin z-index($level: 1) {
+  z-index: $level;
+} 

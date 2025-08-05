@@ -1,0 +1,40 @@
+// Base size for rem calculations
+$base-size: 16;
+
+// PX to REM conversion mixin
+@mixin px-rem($pxValue, $property: "font-size", $standard-size: 16) {
+  #{$property}: $pxValue/$standard-size + rem;
+}
+
+// Aspect Ratio mixin
+@mixin aspectRatio($height, $width) {
+  padding-top: calc((#{$height} / #{$width}) * 100%);
+  position: relative;
+  img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+  }
+}
+
+// Max width responsive mixin
+@mixin max($width) {
+  @media (max-width: #{$width}px) {
+    @content;
+  }
+}
+
+// Min width responsive mixin
+@mixin min($width) {
+  @media (min-width: #{$width}px) {
+    @content;
+  }
+}
+
+// Size function mixin (if not defined elsewhere)
+@function size($value) {
+  @return #{$value}px;
+}
