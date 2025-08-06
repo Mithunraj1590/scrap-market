@@ -438,11 +438,11 @@
                 }
 
                 .current-price {
-                    font-size: size(16);
+                    font-size: size(15);
                     font-weight: 400;
                     color: #000;
                     margin-right: 12px;
-
+                    font-weight: 400;
                     @include max(767) {
                         font-size: size(16);
                     }
@@ -450,7 +450,8 @@
 
                 .original-price {
                     font-size: size(14);
-                    color: #999999;
+                    font-weight: 400;
+                    color: $primary-color;
                     text-decoration: line-through;
 
                     @include max(767) {

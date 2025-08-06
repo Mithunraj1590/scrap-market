@@ -476,10 +476,11 @@
   }
 }
 .listing-section .product-card .product-info .product-price .current-price {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   color: #000;
   margin-right: 12px;
+  font-weight: 400;
 }
 @media (max-width: 767px) {
   .listing-section .product-card .product-info .product-price .current-price {
@@ -488,7 +489,8 @@
 }
 .listing-section .product-card .product-info .product-price .original-price {
   font-size: 14px;
-  color: #999999;
+  font-weight: 400;
+  color: #32694A;
   text-decoration: line-through;
 }
 @media (max-width: 767px) {
