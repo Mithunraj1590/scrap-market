@@ -401,3 +401,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Product Detail Page Tab Functionality - Removed as Bootstrap handles this automatically

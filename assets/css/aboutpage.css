@@ -43,7 +43,7 @@
       -ms-flex-align: center;
           align-items: center;
   gap: 12px;
-  padding: 15px 30px;
+  padding: 15px 40px;
   background-color: transparent;
   border: none;
   border-radius: 25px;
@@ -54,6 +54,7 @@
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   cursor: pointer;
+  background-color: rgba(137, 154, 92, 0.1);
 }
 .about-content-section .cta-button-container .about-cta-btn span {
   font-weight: 500;
@@ -394,6 +395,7 @@
   }
 }
 .company-stats-section .stats-card {
+  background-color: rgba(137, 154, 92, 0.1);
   border-radius: 20px;
   padding: 30px 25px;
   position: relative;
@@ -540,7 +542,6 @@
 }
 
 .testimonial-section {
-  background-color: #F8F9FA;
   padding: 70px 0;
   position: relative;
   overflow: hidden;

@@ -5,7 +5,7 @@
 .home-banner {
     height: calc(100vh - 100px);
     position: relative;
-    overflow: hidden!important;
+    overflow: hidden !important;
 
     @include max(1200) {
         height: calc(100vh - 80px);
@@ -19,85 +19,88 @@
         height: calc(100vh - 83px);
     }
 
-  
+
 
     figure {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    z-index: 0;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 0;
 
         img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             object-position: center;
             animation: scaleInBanner 2s ease-in-out;
-    }
+        }
 
         &::before {
-        position: absolute;
-        width: 100%;
-        content: "";
-        left: 0;
-        top: 0;
-        height: 100%;
-        background-color: rgba($color: #000000, $alpha: .6);
-        z-index: 1;
+            position: absolute;
+            width: 100%;
+            content: "";
+            left: 0;
+            top: 0;
+            height: 100%;
+            background-color: rgba($color: #000000, $alpha: .6);
+            z-index: 1;
+        }
     }
-  }
 
     .banner-content {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translatey(-50%);
-    width: 100%;
-        
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translatey(-50%);
+        width: 100%;
+
         z-index: 2;
 
-       
+
 
         .title {
-        color: #fff;
-        max-width: 70%;
-            line-height: 80px;
+            color: #fff;
+            max-width: 70%;
+            line-height: 1.2;
             margin-bottom: 15px;
-            font-weight: $font-bold;
+            font-weight: 500;
             animation: slideInLeft 1s ease-out 0.3s both;
 
             @include max(1200) {
                 max-width: 75%;
-                line-height: 70px;
+               
                 margin-bottom: 12px;
             }
 
             @include max(991) {
                 max-width: 80%;
-                line-height: 60px;
+                
                 margin-bottom: 10px;
             }
 
             @include max(767) {
                 max-width: 100%;
-                line-height: 50px;
+              
                 margin-bottom: 8px;
                 text-align: center;
             }
 
             @include max(480) {
                 line-height: 40px;
-        margin-bottom: 15px;
-    }
+                margin-bottom: 15px;
+            }
         }
 
         p {
-        font-size: size(24);
-        color: #fff;
+            font-size: size(24);
+            color: #fff;
             font-weight: 300;
             max-width: 60%;
             line-height: 1.4;
             animation: slideInLeft 1s ease-out 0.5s both;
+            @include max(1440){
+               font-size: size(22);
+            }
 
             @include max(1200) {
                 font-size: size(22);
@@ -121,7 +124,7 @@
         }
 
         .btn-groups {
-        margin-top: 40px;
+            margin-top: 40px;
             display: flex;
             gap: 15px;
             flex-wrap: wrap;
@@ -152,7 +155,7 @@
 
             .btn {
                 margin-right: 0;
-            padding: 13px 60px;
+                padding: 13px 60px;
                 font-size: 16px;
                 font-weight: $font-medium;
                 border-radius: 25px;
@@ -177,7 +180,7 @@
                     padding: 8px 30px;
                     font-size: 16px;
                     width: 100%;
-                   
+
                 }
 
                 &:hover {
@@ -195,7 +198,7 @@
         }
     }
 
-  
+
 }
 
 // Shop By Category Section
@@ -294,92 +297,103 @@
             }
         }
 
-      
+
 
     }
 
-    
-        // Pagination - show on mobile and tablet, hide on desktop
-        .swiper-pagination {
-            position: relative;
-            margin-top: 30px;
-            display: none;
 
-            @include max(991) {
-                display: block;
-            }
+    // Pagination - show on mobile and tablet, hide on desktop
+    .swiper-pagination {
+        position: relative;
+        margin-top: 30px;
+        display: none;
 
-            @include max(767) {
-                margin-top: 25px;
-            }
-
-            @include max(480) {
-                margin-top: 20px;
-            }
-
-            .swiper-pagination-bullet {
-                width: 10px;
-                height: 10px;
-                background-color: #ddd;
-                opacity: 1;
-                transition: all 0.3s ease;
-                margin: 0 5px;
-
-                &.swiper-pagination-bullet-active {
-                    background-color: $primary-color;
-                    transform: scale(1.2);
-                }
-            }
+        @include max(991) {
+            display: block;
         }
 
-      // Navigation buttons - only show on laptop and desktop
-      .swiper-button-prev,
-      .swiper-button-next {
+        @include max(767) {
+            margin-top: 25px;
+        }
+
+        @include max(480) {
+            margin-top: 20px;
+        }
+
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            background-color: #ddd;
+            opacity: 1;
+            transition: all 0.3s ease;
+            margin: 0 5px;
+
+            &.swiper-pagination-bullet-active {
+                background-color: $primary-color;
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    // Navigation buttons - only show on laptop and desktop
+    .swiper-button-prev,
+    .swiper-button-next {
         width: 50px;
         height: 50px;
         border-radius: 100%;
         background-color: $primary-color;
         border: 1px solid $primary-color;
         color: #fff;
-          transition: all 0.3s ease;
+        transition: all 0.3s ease;
 
-          &::after {
-           font-size: 20px;
+        &::after {
+            font-size: 20px;
         }
 
-          &:hover {
-              background-color: darken($primary-color, 10%);
-              transform: scale(1.1);
-          }
+        &:hover {
+            background-color: darken($primary-color, 10%);
+            transform: scale(1.1);
+        }
 
-          // Hide navigation on mobile and tablet
-          @include max(991) {
-              display: none;
-          }
-      }
+        // Hide navigation on mobile and tablet
+        @include max(991) {
+            display: none;
+        }
+    }
 
-      .swiper-button-prev {
-       left: -70px;
+    .swiper-button-prev {
+        left: -70px;
 
-          @include max(1200) {
-              left: -60px;
-          }
-   }
+        // Approximate for 125% zoom on a 1920px design
+        @include max(1536) {
+            left: -60px;
+        }
 
-      .swiper-button-next {
-    right: -70px;
+        @include max(1200) {
+            left: -60px;
+        }
 
-          @include max(1200) {
-              right: -60px;
-          }
-   }
+    }
 
-      .swiper-button-disabled {
-     opacity: 1;
-     background-color: transparent;
-     color: #000;
-     border: 1px solid #000;
-   }
+    .swiper-button-next {
+        right: -70px;
+
+        // Approximate for 125% zoom on a 1920px design
+        @include max(1536) {
+            right: -60px;
+        }
+
+        @include max(1200) {
+            right: -60px;
+        }
+    }
+
+    .swiper-button-disabled {
+        opacity: 1;
+        background-color: transparent;
+        color: #000;
+        border: 1px solid #000;
+    }
 }
 
 
@@ -387,7 +401,7 @@
 // Tote Bag Section
 .tote-section {
     padding: 80px 0;
-   
+
     position: relative;
     overflow: hidden;
 
@@ -402,6 +416,7 @@
     // Left Side - Text Content
     .tote-left {
         text-align: left;
+
         .about-title {
             color: $black;
             margin-bottom: 20px;
@@ -446,12 +461,12 @@
 
         .tote-button {
             .btn {
-              
+
                 gap: 12px;
-               
-           
-              
-          
+
+
+
+
 
                 i {
                     font-size: 18px;
@@ -463,7 +478,7 @@
                 }
 
                 @include max(767) {
-                 
+
 
                     i {
                         font-size: 16px;
@@ -471,7 +486,7 @@
                 }
 
                 @include max(480) {
-                  
+
 
                     i {
                         font-size: 14px;
@@ -487,29 +502,31 @@
         align-items: center;
         justify-content: center;
         position: relative;
-        @include max(992){
+
+        @include max(992) {
             padding-top: 50px;
         }
 
         .tote-circle {
-           max-width: 448px;
-           width: 100%;
-  
+            max-width: 448px;
+            width: 100%;
+
             border-radius: 50%;
-         
+
             position: relative;
-           
+
 
             @include max(767) {
                 width: 100%;
-              
+
             }
 
-          
-            figure{
+
+            figure {
                 @include aspectRatio(448, 448);
             }
-            &::before{
+
+            &::before {
                 position: absolute;
                 content: "";
                 left: -30px;
@@ -522,7 +539,7 @@
             }
         }
 
-    
+
     }
 
     // Responsive adjustments for Bootstrap grid
@@ -536,35 +553,36 @@
 // About Us Section
 .about-section {
     padding: 80px 0;
-    background-color: $white;
+    
     position: relative;
     overflow: hidden;
-    
+
     @include max(991) {
         padding: 60px 0;
     }
-    
+
     @include max(767) {
         padding: 40px 0;
-}
+    }
 
     .about-content {
-    display: flex;
-    align-items: center;
-    gap: 80px;
-    
-    @include max(991) {
+        display: flex;
+        align-items: center;
+        gap: 80px;
+
+        @include max(991) {
             flex-direction: row-reverse;
-        gap: 50px;
-        text-align: center;
+            gap: 50px;
+            text-align: center;
+        }
+
+        @include max(767) {
+            gap: 30px;
+        }
     }
-    
-    @include max(767) {
-        gap: 30px;
-    }
-}
-    .row{
-        @include max(991){
+
+    .row {
+        @include max(991) {
             flex-direction: column-reverse;
         }
     }
@@ -574,19 +592,21 @@
         flex: 0 0 393px;
         max-width: 393px;
         position: relative;
+
         figure {
             @include aspectRatio(495, 393);
             border-radius: 0 100px 0 100px;
             overflow: hidden;
             position: relative;
-            
+
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-               
+
             }
         }
+
         &::before {
             content: '';
             position: absolute;
@@ -596,7 +616,7 @@
             left: 50px;
             right: 0;
             bottom: 0;
-            border-radius: 0 100px 0 100px ;
+            border-radius: 0 100px 0 100px;
             z-index: 1;
             border: 1px solid #000;
         }
@@ -607,24 +627,25 @@
         flex: 1;
         padding-left: 20px;
 
-    @include max(991) {
+        @include max(991) {
             padding-left: 0;
             order: 1;
             padding-bottom: 70px;
-    }
-    
+        }
+
         .about-title {
-           
-        color: $text-color;
-        margin-bottom: 20px;
+
+            color: $text-color;
+            margin-bottom: 20px;
             line-height: 1.2;
             position: relative;
 
             @include max(767) {
-             
+
                 margin-bottom: 15px;
             }
-            &::before{
+
+            &::before {
                 position: absolute;
                 content: "";
                 left: 0;
@@ -634,15 +655,15 @@
                 background-color: #000;
             }
 
-            
+
         }
 
         .about-description {
             font-size: size(18);
-        color: $text-color;
-        line-height: 1.6;
-        margin-bottom: 30px;
-        opacity: 0.8;
+            color: $text-color;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            opacity: 0.8;
 
             @include max(767) {
                 font-size: size(16);
@@ -650,7 +671,7 @@
             }
 
             @include max(480) {
-             
+
                 font-size: size(14);
                 margin-bottom: 20px;
             }
@@ -658,54 +679,54 @@
 
         .about-button {
             .btn {
-        display: inline-flex;
-        align-items: center;
+                display: inline-flex;
+                align-items: center;
                 gap: 12px;
-        padding: 15px 30px;
-        font-size: 16px;
-        font-weight: $font-medium;
-        background-color: $primary-color;
-        border: none;
-        border-radius: 25px;
-        color: $white;
-        text-decoration: none;
-        transition: all 0.3s ease;
-        cursor: pointer;
-        
-        &:hover {
-            background-color: darken($primary-color, 10%);
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba($primary-color, 0.3);
-        }
-        
-        i {
-            font-size: 18px;
+                padding: 15px 30px;
+                font-size: 16px;
+                font-weight: $font-medium;
+                background-color: $primary-color;
+                border: none;
+                border-radius: 25px;
+                color: $white;
+                text-decoration: none;
+                transition: all 0.3s ease;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: darken($primary-color, 10%);
+                    transform: translateY(-2px);
+                    box-shadow: 0 5px 15px rgba($primary-color, 0.3);
+                }
+
+                i {
+                    font-size: 18px;
                     transition: transform 0.3s ease;
-        }
-        
+                }
+
                 &:hover i {
                     transform: translateX(3px);
-        }
-        
-        @include max(767) {
-            padding: 12px 25px;
-            font-size: 14px;
-            
-            i {
-                font-size: 16px;
+                }
+
+                @include max(767) {
+                    padding: 12px 25px;
+                    font-size: 14px;
+
+                    i {
+                        font-size: 16px;
+                    }
+                }
+
+                @include max(480) {
+                    padding: 10px 20px;
+                    font-size: 13px;
+
+                    i {
+                        font-size: 14px;
+                    }
+                }
             }
         }
-        
-        @include max(480) {
-            padding: 10px 20px;
-            font-size: 13px;
-            
-            i {
-                font-size: 14px;
-            }
-        }
-    }
-}
     }
 }
 
@@ -738,11 +759,12 @@
         }
     }
 
-        // Blog Swiper Container
+    // Blog Swiper Container
     .blog-swiper {
         position: relative;
         overflow: hidden;
-        @include max(991){
+
+        @include max(991) {
             padding-bottom: 30px;
         }
 
@@ -757,11 +779,11 @@
             display: flex;
             flex-direction: column;
             width: 100%;
-            
-            &:hover{
-                .card-image{
-                    figure{
-                        img{
+
+            &:hover {
+                .card-image {
+                    figure {
+                        img {
                             transform: scale(1.05);
                         }
                     }
@@ -826,7 +848,7 @@
                 font-weight: 500;
             }
 
-          
+
         }
 
         // Card Meta
@@ -838,7 +860,7 @@
             color: #666;
 
             @include max(480) {
-              
+
                 gap: 10px;
                 font-size: 13px;
             }
@@ -906,7 +928,7 @@
             }
         }
 
-    
+
 
         // Custom Swiper Styles
         .swiper-wrapper {
@@ -920,38 +942,38 @@
         }
     }
 
-        // Swiper Pagination - show on mobile and tablet, hide on desktop
-        .swiper-pagination {
-            position: relative;
-            margin-top: 30px;
-            display: block;
+    // Swiper Pagination - show on mobile and tablet, hide on desktop
+    .swiper-pagination {
+        position: relative;
+        margin-top: 30px;
+        display: block;
 
-            @include min(992) {
-                display: none;
-}
+        @include min(992) {
+            display: none;
+        }
 
-@include max(767) {
-                margin-top: 25px;
-            }
+        @include max(767) {
+            margin-top: 25px;
+        }
 
-            @include max(480) {
-                margin-top: 20px;
-            }
+        @include max(480) {
+            margin-top: 20px;
+        }
 
-            .swiper-pagination-bullet {
-                width: 10px;
-                height: 10px;
-                background-color: #ddd;
-                opacity: 1;
-                transition: all 0.3s ease;
-                margin: 0 5px;
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            background-color: #ddd;
+            opacity: 1;
+            transition: all 0.3s ease;
+            margin: 0 5px;
 
-                &.swiper-pagination-bullet-active {
-                    background-color: $primary-color;
-                    transform: scale(1.2);
-                }
+            &.swiper-pagination-bullet-active {
+                background-color: $primary-color;
+                transform: scale(1.2);
             }
         }
+    }
 
     // Navigation buttons - only show on laptop and desktop
     .blog-nav-next,
@@ -1000,6 +1022,11 @@
     .blog-nav-next {
         right: -70px;
 
+        // Approximate for 125% zoom on a 1920px design
+        @include max(1536) {
+            right: -60px;
+        }
+
         @include max(1200) {
             right: -60px;
         }
@@ -1007,6 +1034,11 @@
 
     .blog-nav-prev {
         left: -70px;
+
+        // Approximate for 125% zoom on a 1920px design
+        @include max(1536) {
+            left: -60px;
+        }
 
         @include max(1200) {
             left: -60px;
@@ -1020,20 +1052,20 @@
 
     position: relative;
     overflow: hidden;
-    
+
     @include max(1200) {
         padding: 70px 0;
     }
-    
+
     @include max(991) {
         padding: 60px 0;
     }
-    
+
     @include max(767) {
         padding: 50px 0;
     }
 
-  
+
 
     // Section Header
     .section-header {
@@ -1080,21 +1112,21 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
-        
+
         @include max(1200) {
             gap: 25px;
         }
-        
+
         @include max(991) {
             grid-template-columns: repeat(2, 1fr);
             gap: 25px;
         }
-        
+
         @include max(767) {
             grid-template-columns: 1fr;
             gap: 20px;
         }
-        
+
         @include max(480) {
             gap: 15px;
         }
@@ -1113,27 +1145,27 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
+
         &:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
         }
-        
+
         @include max(1200) {
             padding: 25px;
             min-height: 180px;
         }
-        
+
         @include max(991) {
             padding: 25px;
             min-height: 160px;
         }
-        
+
         @include max(767) {
             padding: 25px;
             min-height: auto;
         }
-        
+
         @include max(480) {
             padding: 20px;
         }
@@ -1142,11 +1174,11 @@
         &.stats-card-white {
             background-color: $white;
             color: $text-color;
-            
+
             .card-title {
                 color: $text-color;
             }
-            
+
             .stat-item {
                 color: #666;
             }
@@ -1155,11 +1187,11 @@
         &.stats-card-green {
             background-color: $primary-color;
             color: $white;
-            
+
             .card-title {
                 color: $white;
             }
-            
+
             .stat-item {
                 color: rgba($white, 0.9);
             }
@@ -1168,11 +1200,11 @@
         &.stats-card-beige {
             background-color: #FFF1CA;
             color: $text-color;
-            
+
             .card-title {
                 color: $text-color;
             }
-            
+
             .stat-item {
                 color: #666;
             }
@@ -1190,27 +1222,27 @@
             font-size: 24px;
             transition: all 0.3s ease;
             position: absolute;
-            
+
             @include max(1200) {
                 width: 55px;
                 height: 55px;
                 font-size: 22px;
             }
-            
+
             @include max(991) {
                 width: 50px;
                 height: 50px;
                 font-size: 20px;
                 margin-bottom: 15px;
             }
-            
+
             @include max(767) {
                 width: 45px;
                 height: 45px;
                 font-size: 18px;
                 margin-bottom: 12px;
             }
-            
+
             @include max(480) {
                 width: 40px;
                 height: 40px;
@@ -1229,10 +1261,10 @@
 
                 @include max(767) {
                     right: 15px;
-                    top:  15px;
+                    top: 15px;
                 }
 
-              
+
             }
         }
 
@@ -1248,7 +1280,7 @@
                     top: 15px;
                 }
 
-              
+
             }
         }
 
@@ -1264,7 +1296,7 @@
                     top: 15px;
                 }
 
-               
+
             }
         }
 
@@ -1275,23 +1307,23 @@
             line-height: 1.3;
             text-align: center;
             font-weight: $font-bold;
-            
+
             @include max(1200) {
                 font-size: size(17);
                 margin-bottom: 18px;
             }
-            
+
             @include max(991) {
                 font-size: size(16);
                 margin-bottom: 15px;
             }
-            
+
             @include max(767) {
                 font-size: size(18);
                 margin-bottom: 20px;
             }
-            
-          
+
+
         }
 
         // Card Content
@@ -1299,40 +1331,40 @@
             flex: 1;
             display: flex;
             flex-direction: column;
-        
+
 
             .stat-item {
                 font-size: size(16);
                 line-height: 1.6;
                 margin-bottom: 15px;
                 text-align: left;
-                
+
                 &:last-child {
                     margin-bottom: 0;
                 }
-                
+
                 strong {
                     font-weight: $font-bold;
                     color: inherit;
                     display: block;
                     margin-bottom: 5px;
                 }
-                
+
                 @include max(1200) {
                     font-size: size(15);
                     margin-bottom: 12px;
                 }
-                
+
                 @include max(991) {
                     font-size: size(14);
                     margin-bottom: 10px;
                 }
-                
+
                 @include max(767) {
                     font-size: size(15);
                     margin-bottom: 12px;
                 }
-                
+
                 @include max(480) {
                     font-size: size(13);
                     margin-bottom: 8px;
@@ -1344,7 +1376,7 @@
         opacity: 0;
         transform: translateY(20px);
         animation: fadeInUp 0.6s ease forwards;
-        
+
         @for $i from 1 through 6 {
             &:nth-child(#{$i}) {
                 animation-delay: #{$i * 0.1}s;
@@ -1352,7 +1384,7 @@
         }
 
         // Hover effects
-       
+
     }
 
     // Responsive adjustments for different screen sizes
@@ -1394,6 +1426,7 @@
     0% {
         transform: scale(1.3);
     }
+
     100% {
         transform: scale(1);
     }
@@ -1404,6 +1437,7 @@
         transform: translateX(-50px);
         opacity: 0;
     }
+
     100% {
         transform: translateX(0);
         opacity: 1;
@@ -1415,6 +1449,7 @@
         transform: translateY(30px);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0);
         opacity: 1;

@@ -46,7 +46,7 @@
             display: inline-flex;
             align-items: center;
             gap: 12px;
-            padding: 15px 30px;
+            padding: 15px 40px;
             background-color: transparent; // Light olive green
             border: none;
             border-radius: 25px;
@@ -56,6 +56,7 @@
             text-decoration: none;
             transition: all 0.3s ease;
             cursor: pointer;
+            background-color: rgba($color: #899A5C, $alpha: .1);
 
 
 
@@ -383,7 +384,7 @@
     }
 
     .stats-card {
-      
+       background-color: rgba($color: #899A5C, $alpha: .1);
         border-radius: 20px;
         padding: 30px 25px;
         position: relative;
@@ -500,7 +501,7 @@
 
             strong {
                 color: #000; // Darker green for bold text
-                font-weight: $font-bold;
+                font-weight: 700;
                 display: inline-block;
                 margin-bottom: 5px;
 
@@ -521,7 +522,7 @@
 
  // Testimonial Section
  .testimonial-section {
-     background-color: #F8F9FA;
+    
      padding: 70px 0;
      position: relative;
      overflow: hidden;

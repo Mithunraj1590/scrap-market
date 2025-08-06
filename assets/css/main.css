@@ -13308,6 +13308,9 @@ body {
   height: 100%;
   font-family: "Roboto", sans-serif;
 }
+body.home-page {
+  background-color: #F0FFEF;
+}
 
 .main {
   margin-top: 100px;
